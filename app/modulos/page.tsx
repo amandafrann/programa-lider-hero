@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ModulosPage() {
   return (
     <div className="flex min-h-screen">
@@ -5,9 +7,12 @@ export default function ModulosPage() {
       {/* SIDEBAR */}
       <div className="w-72 border-r bg-white p-6">
 
-        <a className="text-sm text-gray-500 mb-6 block">
+        <Link
+          href="/jornada"
+          className="text-sm text-gray-500 mb-6 block hover:underline"
+        >
           ← Voltar para jornada
-        </a>
+        </Link>
 
         <h2 className="font-semibold text-lg mb-6">
           R&S para Líderes
