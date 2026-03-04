@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 
 const faq = [
   {
@@ -9,17 +10,17 @@ const faq = [
       {
         pergunta: "Como abrir uma vaga na Gupy?",
         resposta:
-          "Utilize o agente estratégico no Slack para gerar o resumo da vaga e insira nas informações internas da Gupy."
+          "Utilize o Agente Estratégico de R&S no Slack para gerar o resumo da vaga e insira as informações estruturadas nos Dados Internos da Gupy."
       },
       {
         pergunta: "Quando devo envolver o time de People?",
         resposta:
-          "Sempre antes da abertura da vaga para alinhamento de perfil e estratégia de contratação."
+          "Sempre antes de abrir uma vaga para alinhar perfil, prioridade da contratação e estratégia de recrutamento."
       },
       {
         pergunta: "O que é o agente estratégico de R&S?",
         resposta:
-          "Um chatbot no Slack que ajuda líderes a estruturar a necessidade de contratação."
+          "É um chatbot no Slack que ajuda líderes a estruturar a necessidade da contratação antes da abertura da vaga."
       }
     ]
   },
@@ -29,12 +30,12 @@ const faq = [
       {
         pergunta: "Como registrar feedback de entrevista?",
         resposta:
-          "Utilize o campo de feedback na Gupy logo após a entrevista."
+          "Registre o feedback diretamente na Gupy logo após a entrevista, no campo específico de avaliação."
       },
       {
         pergunta: "Qual o SLA do processo seletivo?",
         resposta:
-          "O prazo médio é de 20 dias entre abertura da vaga e proposta."
+          "O prazo médio entre abertura da vaga e envio da proposta é de aproximadamente 20 dias."
       }
     ]
   }
@@ -48,20 +49,55 @@ export default function WikiPage() {
     texto.toLowerCase().includes(busca.toLowerCase())
 
   return (
-    <div className="min-h-screen p-16">
+    <div className="min-h-screen bg-gray-50">
 
-      {/* HEADER */}
-      <div className="max-w-4xl mx-auto">
+      {/* HEADER SUPERIOR */}
+      <div className="flex items-center justify-between px-10 py-6 border-b bg-white">
 
-        <h1 className="text-4xl font-bold mb-6">
-          Wiki People
+        <Link
+          href="/"
+          className="text-gray-500 hover:text-black flex items-center gap-2"
+        >
+          ← Voltar ao início
+        </Link>
+
+        <div className="flex items-center gap-2 font-semibold">
+          ❓ Wiki Hero
+        </div>
+
+      </div>
+
+
+      {/* HERO */}
+      <div className="text-center py-16 px-6">
+
+        <div className="inline-block px-4 py-1 text-xs rounded-full bg-white shadow mb-6">
+          ✨ BASE DE CONHECIMENTO
+        </div>
+
+        <h1 className="text-5xl font-bold mb-4">
+          Como podemos <span className="text-pink-500">ajudar hoje?</span>
         </h1>
 
-        {/* BUSCA */}
-        <div className="bg-gray-100 p-4 rounded-xl mb-10 flex">
+        <p className="text-gray-500 max-w-xl mx-auto">
+          Encontre processos, regras e respostas rápidas sobre People
+          em poucos segundos.
+        </p>
+
+      </div>
+
+
+      {/* BUSCA */}
+      <div className="max-w-3xl mx-auto px-6">
+
+        <div className="bg-white shadow-lg rounded-xl p-4 flex items-center gap-4">
+
+          <span className="text-gray-400 text-xl">
+            🔍
+          </span>
 
           <input
-            className="w-full bg-transparent outline-none"
+            className="w-full outline-none text-gray-700"
             placeholder="Pesquise: vaga, entrevista, Gupy..."
             value={busca}
             onChange={(e) => setBusca(e.target.value)}
@@ -70,7 +106,7 @@ export default function WikiPage() {
           {busca && (
             <button
               onClick={() => setBusca("")}
-              className="text-gray-400 text-sm"
+              className="text-sm text-gray-400 hover:text-black"
             >
               Limpar
             </button>
@@ -78,60 +114,72 @@ export default function WikiPage() {
 
         </div>
 
-        {/* FAQ */}
-        <div className="space-y-6">
+      </div>
 
-          {faq.map((categoria, i) => {
-            const perguntasFiltradas = categoria.perguntas.filter(
-              (p) => filtrar(p.pergunta) || filtrar(p.resposta)
-            )
 
-            if (busca && perguntasFiltradas.length === 0) return null
+      {/* FAQ */}
+      <div className="max-w-3xl mx-auto px-6 mt-12 space-y-8">
 
-            return (
-              <div key={i} className="border rounded-xl">
+        {faq.map((categoria, i) => {
 
-                <div className="p-5 font-semibold bg-gray-50">
-                  {categoria.categoria}
-                </div>
+          const perguntasFiltradas = categoria.perguntas.filter(
+            (p) => filtrar(p.pergunta) || filtrar(p.resposta)
+          )
 
-                {perguntasFiltradas.map((item, index) => {
-                  const id = i * 10 + index
+          if (busca && perguntasFiltradas.length === 0) return null
 
-                  return (
-                    <div
-                      key={id}
-                      className="border-t cursor-pointer"
-                      onClick={() =>
-                        setAberto(aberto === id ? null : id)
-                      }
-                    >
-                      <div className="p-5 flex justify-between">
+          return (
+            <div key={i} className="bg-white rounded-xl shadow-sm border">
 
-                        <p>{item.pergunta}</p>
+              <div className="px-6 py-4 border-b font-semibold flex items-center gap-2">
+                ⚡ {categoria.categoria}
+              </div>
 
-                        <span>
-                          {aberto === id ? "−" : "+"}
-                        </span>
+              {perguntasFiltradas.map((item, index) => {
 
-                      </div>
+                const id = i * 10 + index
 
-                      {aberto === id && (
-                        <div className="px-5 pb-5 text-gray-600">
-                          {item.resposta}
-                        </div>
-                      )}
+                return (
+                  <div
+                    key={id}
+                    className="border-t cursor-pointer"
+                    onClick={() =>
+                      setAberto(aberto === id ? null : id)
+                    }
+                  >
+
+                    <div className="flex justify-between px-6 py-4 hover:bg-gray-50">
+
+                      <p className="text-gray-800">
+                        {item.pergunta}
+                      </p>
+
+                      <span className="text-gray-400">
+                        {aberto === id ? "−" : "+"}
+                      </span>
 
                     </div>
-                  )
-                })}
-              </div>
-            )
-          })}
 
-        </div>
+                    {aberto === id && (
+                      <div className="px-6 pb-5 text-gray-600">
+                        {item.resposta}
+                      </div>
+                    )}
+
+                  </div>
+                )
+              })}
+
+            </div>
+          )
+        })}
 
       </div>
+
+
+      {/* ESPAÇO FINAL */}
+      <div className="h-24"></div>
+
     </div>
   )
 }
