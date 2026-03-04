@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="min-h-screen bg-gray-50 flex items-center justify-center">
@@ -19,9 +21,12 @@ export default function Hero() {
 
           <div className="flex gap-4 mt-8">
 
-            <button className="bg-black text-white px-6 py-3 rounded-xl">
+            <Link
+              href="/modulos"
+              className="bg-black text-white px-6 py-3 rounded-xl inline-block"
+            >
               Explorar Trilhas
-            </button>
+            </Link>
 
             <button className="border px-6 py-3 rounded-xl">
               Wiki Hero
