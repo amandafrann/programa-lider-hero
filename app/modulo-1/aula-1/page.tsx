@@ -3,15 +3,17 @@ import Link from "next/link";
 export default function Aula1() {
   return (
     <main className="min-h-screen bg-black text-white flex justify-center py-20">
-      <div className="max-w-3xl space-y-10">
+      <div className="max-w-3xl w-full space-y-10">
 
+        {/* Navegação */}
         <Link
-          href="/modulo-1"
+          href="/jornada/rs"
           className="text-gray-400 hover:text-white"
         >
-          ← Voltar para Módulo 1
+          ← Voltar para trilha
         </Link>
 
+        {/* Título */}
         <h1 className="text-4xl font-bold">
           Aula 1 — Acionar Agente Estratégico (Slack)
         </h1>
@@ -21,7 +23,6 @@ export default function Aula1() {
         </p>
 
         {/* Progresso da trilha */}
-
         <div>
           <p className="text-sm text-gray-400 mb-2">
             Progresso da trilha
@@ -36,22 +37,25 @@ export default function Aula1() {
           </p>
         </div>
 
+        {/* Responsabilidade */}
         <div className="bg-zinc-900 p-6 rounded-xl">
           <h2 className="text-xl font-semibold mb-2">
             Responsabilidade do líder
           </h2>
+
           <p>
             Garantir que toda nova necessidade de contratação comece pelo
             acionamento do Agente Estratégico no Slack.
           </p>
         </div>
 
+        {/* Passo a passo */}
         <div className="bg-zinc-900 p-6 rounded-xl">
-          <h2 className="text-xl font-semibold mb-2">
+          <h2 className="text-xl font-semibold mb-4">
             Passo a passo
           </h2>
 
-          <ol className="list-decimal ml-5 space-y-2">
+          <ol className="list-decimal ml-5 space-y-2 text-gray-300">
             <li>Acesse o Slack</li>
             <li>Acione o Agente Estratégico</li>
             <li>Informe área, cargo e motivo da vaga</li>
@@ -59,32 +63,36 @@ export default function Aula1() {
           </ol>
         </div>
 
+        {/* Expectativa */}
         <div className="bg-zinc-900 p-6 rounded-xl">
           <h2 className="text-xl font-semibold mb-2">
             Expectativa de People
           </h2>
+
           <p>
             Todas as vagas devem começar via Agente Estratégico para garantir
-            alinhamento inicial e evitar retrabalho.
+            alinhamento inicial e evitar retrabalho na abertura da vaga.
           </p>
         </div>
 
+        {/* Métricas */}
         <div className="bg-zinc-900 p-6 rounded-xl">
-          <h2 className="text-xl font-semibold mb-2">
+          <h2 className="text-xl font-semibold mb-4">
             Métricas de sucesso
           </h2>
 
-          <ul className="list-disc ml-5 space-y-2">
+          <ul className="list-disc ml-5 space-y-2 text-gray-300">
             <li>100% das vagas iniciadas via Agente Estratégico</li>
             <li>Redução de retrabalho na definição da vaga</li>
             <li>Menor tempo entre necessidade e abertura da vaga</li>
           </ul>
         </div>
 
-        <div className="flex justify-end">
+        {/* Navegação entre aulas */}
+        <div className="flex justify-end pt-10">
           <Link
             href="/modulo-1/aula-2"
-            className="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200"
+            className="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200 transition"
           >
             Próxima aula →
           </Link>
