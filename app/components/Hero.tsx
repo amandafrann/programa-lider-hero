@@ -22,10 +22,10 @@ export default function Hero() {
           <div className="flex gap-4 mt-8">
 
             <Link
-              href="/modulos"
-              className="bg-black text-white px-6 py-3 rounded-xl inline-block"
+              href="/jornada"
+              className="bg-black text-white px-6 py-3 rounded-xl hover:opacity-90"
             >
-              Explorar Trilhas
+              Explorar Jornadas
             </Link>
 
             <button className="border px-6 py-3 rounded-xl">
