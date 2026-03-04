@@ -5,8 +5,11 @@ export default function Modulo1() {
     <main className="min-h-screen bg-black text-white flex justify-center py-20">
       <div className="max-w-3xl space-y-10">
 
-        <Link href="/" className="text-gray-400 hover:text-white">
-          ← Voltar para trilha
+        <Link
+          href="/modulos"
+          className="text-gray-400 hover:text-white"
+        >
+          ← Voltar para módulos
         </Link>
 
         <h1 className="text-4xl font-bold">
