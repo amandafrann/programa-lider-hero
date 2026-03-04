@@ -1,6 +1,54 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 
 export default function Modulos() {
+
+  const [moduloAtual, setModuloAtual] = useState(1);
+
+  const modulos = [
+    {
+      id: 1,
+      titulo: "Módulo 1 — Definir a vaga",
+      conteudo: (
+        <>
+          <h2 className="text-3xl font-bold mb-4">Definir a vaga</h2>
+
+          <p className="text-gray-600 mb-6">
+            O primeiro passo de qualquer contratação é garantir clareza sobre
+            a vaga que está sendo aberta. Contratações ruins geralmente começam
+            com vagas mal definidas.
+          </p>
+
+          <p className="text-gray-600 mb-6">
+            Antes de iniciar o recrutamento, alinhe expectativas com People e
+            entenda claramente qual problema essa contratação precisa resolver.
+          </p>
+        </>
+      ),
+    },
+    {
+      id: 2,
+      titulo: "Módulo 2 — Abrir a vaga",
+      conteudo: (
+        <>
+          <h2 className="text-3xl font-bold mb-4">Abrir a vaga</h2>
+
+          <p className="text-gray-600 mb-6">
+            Após definir corretamente a vaga, o próximo passo é abrir a posição
+            no sistema interno e iniciar o processo de recrutamento.
+          </p>
+
+          <p className="text-gray-600 mb-6">
+            Isso garante visibilidade da vaga e alinhamento entre liderança
+            e People sobre o perfil buscado.
+          </p>
+        </>
+      ),
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-gray-50 flex">
 
@@ -21,19 +69,21 @@ export default function Modulos() {
 
         <div className="space-y-3">
 
-          <Link
-            href="/modulo-1"
-            className="block bg-gray-100 p-4 rounded-lg hover:bg-gray-200"
-          >
-            Módulo 1 — Definir a vaga
-          </Link>
+          {modulos.map((modulo) => (
 
-          <Link
-            href="/modulo-2"
-            className="block bg-gray-100 p-4 rounded-lg hover:bg-gray-200"
-          >
-            Módulo 2 — Abrir a vaga
-          </Link>
+            <button
+              key={modulo.id}
+              onClick={() => setModuloAtual(modulo.id)}
+              className={`w-full text-left p-4 rounded-lg ${
+                moduloAtual === modulo.id
+                  ? "bg-black text-white"
+                  : "bg-gray-100 hover:bg-gray-200"
+              }`}
+            >
+              {modulo.titulo}
+            </button>
+
+          ))}
 
           <div className="bg-gray-100 p-4 rounded-lg opacity-60">
             Módulo 3 — Conduzir entrevistas 🔒
@@ -51,29 +101,22 @@ export default function Modulos() {
 
       <section className="flex-1 p-16">
 
-        <h1 className="text-4xl font-bold text-gray-900 mb-6">
-          Recrutamento & Seleção
-        </h1>
+        {modulos
+          .filter((m) => m.id === moduloAtual)
+          .map((m) => (
+            <div key={m.id} className="max-w-3xl">
 
-        <p className="text-gray-500 text-lg max-w-2xl">
-          Nesta trilha você aprenderá como executar corretamente os processos
-          de recrutamento e seleção na Hero. Cada módulo representa uma etapa
-          essencial da jornada de contratação.
-        </p>
+              {m.conteudo}
 
-        <div className="mt-10 bg-white rounded-xl shadow p-8 max-w-3xl">
+              <button
+                className="mt-10 bg-black text-white px-6 py-3 rounded-lg"
+                onClick={() => setModuloAtual(m.id + 1)}
+              >
+                Concluir módulo
+              </button>
 
-          <h3 className="text-xl font-semibold mb-4">
-            Como utilizar esta trilha
-          </h3>
-
-          <p className="text-gray-600">
-            Navegue pelos módulos no menu lateral. Cada módulo contém
-            instruções práticas para líderes executarem corretamente
-            os processos de contratação.
-          </p>
-
-        </div>
+            </div>
+          ))}
 
       </section>
 
