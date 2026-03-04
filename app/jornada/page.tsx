@@ -2,66 +2,154 @@ import Link from "next/link";
 
 export default function Jornada() {
   return (
-    <main className="min-h-screen bg-black text-white flex justify-center py-20">
-      <div className="max-w-3xl w-full space-y-12">
+    <main className="min-h-screen bg-gray-50 flex justify-center py-20">
 
-        <Link href="/" className="text-gray-400 hover:text-white">
+      <div className="max-w-6xl w-full px-8">
+
+        <Link
+          href="/"
+          className="text-gray-500 hover:text-gray-800 mb-8 inline-block"
+        >
           ← Voltar
         </Link>
 
-        <h1 className="text-4xl font-bold">
-          Jornada do Colaborador
-        </h1>
+        <div className="mb-16">
 
-        <p className="text-gray-400 text-lg">
-          Explore as etapas da jornada de experiência do colaborador na Hero.
-        </p>
+          <h1 className="text-4xl font-bold text-gray-900">
+            Jornada do Colaborador
+          </h1>
 
-        {/* Lista da jornada */}
-        <div className="flex flex-col gap-4">
+          <p className="text-gray-500 mt-4 text-lg">
+            Explore as etapas da jornada de experiência do colaborador na Hero.
+          </p>
 
-          <div className="bg-pink-500 p-6 rounded-lg font-medium">
-            1. Atração / EB
+        </div>
+
+        <div className="grid grid-cols-3 gap-8">
+
+          {/* Atração */}
+
+          <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <h2 className="text-xl font-semibold mb-2">
+              Atração / Employer Branding
+            </h2>
+
+            <p className="text-gray-500">
+              Como posicionar a Hero para atrair os talentos certos.
+            </p>
           </div>
+
+
+          {/* R&S */}
 
           <Link
             href="/modulos"
-            className="bg-pink-500 p-6 rounded-lg font-medium"
+            className="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition"
           >
-            2. R&S
+            <h2 className="text-xl font-semibold mb-2">
+              Recrutamento & Seleção
+            </h2>
+
+            <p className="text-gray-500">
+              Aprenda a executar corretamente os processos de R&S na Hero.
+            </p>
           </Link>
 
-          <div className="bg-pink-500 p-6 rounded-lg font-medium">
-            3. Admissão
+
+          {/* Admissão */}
+
+          <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <h2 className="text-xl font-semibold mb-2">
+              Admissão
+            </h2>
+
+            <p className="text-gray-500">
+              Estruturação do processo de entrada do colaborador.
+            </p>
           </div>
 
-          <div className="bg-pink-500 p-6 rounded-lg font-medium">
-            4. Onboarding Institucional
+
+          {/* Onboarding Institucional */}
+
+          <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <h2 className="text-xl font-semibold mb-2">
+              Onboarding Institucional
+            </h2>
+
+            <p className="text-gray-500">
+              Integração cultural e entendimento da empresa.
+            </p>
           </div>
 
-          <div className="bg-pink-500 p-6 rounded-lg font-medium">
-            5. Onboarding da Área
+
+          {/* Onboarding da Área */}
+
+          <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <h2 className="text-xl font-semibold mb-2">
+              Onboarding da Área
+            </h2>
+
+            <p className="text-gray-500">
+              Integração com a equipe e responsabilidades da função.
+            </p>
           </div>
 
-          <div className="bg-pink-500 p-6 rounded-lg font-medium">
-            6. Desenvolvimento
+
+          {/* Desenvolvimento */}
+
+          <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <h2 className="text-xl font-semibold mb-2">
+              Desenvolvimento
+            </h2>
+
+            <p className="text-gray-500">
+              Crescimento e evolução do colaborador dentro da Hero.
+            </p>
           </div>
 
-          <div className="bg-pink-500 p-6 rounded-lg font-medium">
-            7. Engajamento
+
+          {/* Engajamento */}
+
+          <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <h2 className="text-xl font-semibold mb-2">
+              Engajamento
+            </h2>
+
+            <p className="text-gray-500">
+              Ações para fortalecer conexão e cultura.
+            </p>
           </div>
 
-          <div className="bg-pink-500 p-6 rounded-lg font-medium">
-            8. Retenção
+
+          {/* Retenção */}
+
+          <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <h2 className="text-xl font-semibold mb-2">
+              Retenção
+            </h2>
+
+            <p className="text-gray-500">
+              Estratégias para manter talentos na Hero.
+            </p>
           </div>
 
-          <div className="bg-pink-500 p-6 rounded-lg font-medium">
-            9. Offboarding
+
+          {/* Offboarding */}
+
+          <div className="bg-white p-8 rounded-2xl shadow-sm">
+            <h2 className="text-xl font-semibold mb-2">
+              Offboarding
+            </h2>
+
+            <p className="text-gray-500">
+              Encerramento saudável da jornada do colaborador.
+            </p>
           </div>
 
         </div>
 
       </div>
+
     </main>
   );
 }
