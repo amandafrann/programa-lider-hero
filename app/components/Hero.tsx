@@ -8,8 +8,8 @@ export default function Hero() {
 
         <div>
           <h1 className="text-6xl font-bold text-gray-900 leading-tight">
-            Potencialize sua
-            <span className="text-pink-500"> Jornada Hero</span>
+            Programa
+            <span className="text-pink-500"> Líder Hero</span>
           </h1>
 
           <p className="mt-6 text-lg text-gray-500">
