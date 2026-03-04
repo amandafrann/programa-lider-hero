@@ -20,19 +20,25 @@ export default function ModulosPage() {
 
         <div className="space-y-3">
 
-          <div className="bg-black text-white px-4 py-3 rounded-lg">
+          <Link
+            href="/modulos"
+            className="block bg-black text-white px-4 py-3 rounded-lg"
+          >
             Módulo 1 — Definir a vaga
-          </div>
+          </Link>
 
-          <div className="bg-gray-100 px-4 py-3 rounded-lg">
+          <Link
+            href="/modulo-2"
+            className="block bg-gray-100 px-4 py-3 rounded-lg hover:bg-gray-200 cursor-pointer"
+          >
             Módulo 2 — Abrir a vaga
-          </div>
+          </Link>
 
-          <div className="bg-gray-100 px-4 py-3 rounded-lg opacity-60">
+          <div className="bg-gray-100 px-4 py-3 rounded-lg opacity-60 cursor-not-allowed">
             Módulo 3 — Conduzir entrevistas 🔒
           </div>
 
-          <div className="bg-gray-100 px-4 py-3 rounded-lg opacity-60">
+          <div className="bg-gray-100 px-4 py-3 rounded-lg opacity-60 cursor-not-allowed">
             Módulo 4 — Tomada de decisão 🔒
           </div>
 
@@ -53,7 +59,6 @@ export default function ModulosPage() {
         </p>
 
 
-
         {/* OBJETIVO */}
         <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg mb-8">
 
@@ -72,7 +77,6 @@ export default function ModulosPage() {
           </p>
 
         </div>
-
 
 
         {/* PAPEL DO LIDER */}
@@ -109,7 +113,6 @@ export default function ModulosPage() {
         </div>
 
 
-
         {/* PAPEL DO RH */}
         <div className="bg-gray-50 p-6 rounded-lg mb-8">
 
@@ -129,7 +132,6 @@ export default function ModulosPage() {
         </div>
 
 
-
         {/* OBSERVAÇÕES */}
         <div className="bg-yellow-50 border border-yellow-200 p-6 rounded-lg mb-8">
 
@@ -143,7 +145,6 @@ export default function ModulosPage() {
           </ul>
 
         </div>
-
 
 
         {/* FAQ */}
@@ -161,7 +162,6 @@ export default function ModulosPage() {
             Slack → Apps → Chatbot de People.
           </p>
 
-
           <p className="font-medium">
             O que recebo ao final da conversa?
           </p>
@@ -173,11 +173,13 @@ export default function ModulosPage() {
         </div>
 
 
-
         {/* BOTÃO */}
-        <button className="bg-black text-white px-6 py-3 rounded-lg hover:opacity-80">
+        <Link
+          href="/modulo-2"
+          className="inline-block bg-black text-white px-6 py-3 rounded-lg hover:opacity-80"
+        >
           Concluir módulo
-        </button>
+        </Link>
 
       </div>
     </div>
