@@ -28,9 +28,12 @@ export default function Hero() {
               Explorar Jornadas
             </Link>
 
-            <button className="border px-6 py-3 rounded-xl">
+            <Link
+              href="/wiki"
+              className="border px-6 py-3 rounded-xl hover:bg-gray-100"
+            >
               Wiki Hero
-            </button>
+            </Link>
 
           </div>
         </div>
