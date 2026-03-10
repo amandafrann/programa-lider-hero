@@ -26,24 +26,23 @@ export default function DesenvolvimentoPage() {
 
         <div className="mb-12">
 
-          <h2 className="text-xl font-semibold mb-4">
+          <h2 className="text-xl font-semibold mb-2">
             Gestão de Performance
           </h2>
 
-          <div className="grid grid-cols-3 gap-4">
+          <p className="text-gray-500 mb-6">
+            Na Hero, a gestão de performance acontece de forma contínua ao longo da jornada do colaborador. 
+            Líderes acompanham evolução, identificam oportunidades de desenvolvimento e atuam de forma preventiva
+            para manter o time saudável e performando.
+          </p>
 
-            <Link
-              href="/desenvolvimento/performance/avaliacao"
-              className="bg-white border rounded-lg p-4 hover:shadow-sm transition"
-            >
-              Como avaliamos performance
-            </Link>
+          <div className="grid grid-cols-3 gap-4">
 
             <Link
               href="/desenvolvimento/performance/feedback"
               className="bg-white border rounded-lg p-4 hover:shadow-sm transition"
             >
-              Feedback (dar e receber)
+              Feedback
             </Link>
 
             <Link
@@ -83,9 +82,15 @@ export default function DesenvolvimentoPage() {
 
         <div>
 
-          <h2 className="text-xl font-semibold mb-4">
+          <h2 className="text-xl font-semibold mb-2">
             Desenvolvimento de Carreira
           </h2>
+
+          <p className="text-gray-500 mb-6">
+            O desenvolvimento de carreira na Hero busca garantir crescimento estruturado e transparente. 
+            Líderes apoiam a evolução profissional das pessoas por meio de planos de desenvolvimento, 
+            decisões de mérito e oportunidades de progressão.
+          </p>
 
           <div className="grid grid-cols-3 gap-4">
 
