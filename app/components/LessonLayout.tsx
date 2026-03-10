@@ -29,29 +29,38 @@ export default function LessonLayout({
 
           <Link
             href="/desenvolvimento/performance/feedback"
-            className="block bg-gray-100 px-4 py-3 rounded-lg hover:bg-gray-200"
+            className="block bg-gray-100 px-4 py-3 rounded-lg hover:bg-gray-200 transition"
           >
             Feedback
           </Link>
 
-          <div className="bg-gray-100 px-4 py-3 rounded-lg opacity-60">
+          <Link
+            href="/desenvolvimento/performance/pulso"
+            className="block bg-gray-100 px-4 py-3 rounded-lg hover:bg-gray-200 transition"
+          >
             Pulso
-          </div>
+          </Link>
 
-          <div className="bg-gray-100 px-4 py-3 rounded-lg opacity-60">
+          <Link
+            href="/desenvolvimento/performance/calibracao"
+            className="block bg-gray-100 px-4 py-3 rounded-lg hover:bg-gray-200 transition"
+          >
             Calibração
-          </div>
+          </Link>
 
           <Link
             href="/desenvolvimento/performance/one-on-one"
-            className="block bg-gray-100 px-4 py-3 rounded-lg hover:bg-gray-200"
+            className="block bg-gray-100 px-4 py-3 rounded-lg hover:bg-gray-200 transition"
           >
             1:1
           </Link>
 
-          <div className="bg-gray-100 px-4 py-3 rounded-lg opacity-60">
+          <Link
+            href="/desenvolvimento/performance/yellow-flag"
+            className="block bg-gray-100 px-4 py-3 rounded-lg hover:bg-gray-200 transition"
+          >
             Yellow Flag
-          </div>
+          </Link>
 
         </div>
 
