@@ -3,7 +3,6 @@ import Link from "next/link";
 export default function Jornada() {
   return (
     <main className="min-h-screen bg-gray-50 flex justify-center py-20">
-
       <div className="max-w-6xl w-full px-8">
 
         <Link
@@ -14,7 +13,6 @@ export default function Jornada() {
         </Link>
 
         <div className="mb-16">
-
           <h1 className="text-4xl font-bold text-gray-900">
             Jornada do Colaborador
           </h1>
@@ -22,15 +20,12 @@ export default function Jornada() {
           <p className="text-gray-500 mt-4 text-lg">
             Explore as etapas da jornada de experiência do colaborador na Hero.
           </p>
-
         </div>
 
         <div className="grid grid-cols-3 gap-8">
 
           {/* Atração */}
-
           <div className="bg-gray-100 p-8 rounded-2xl opacity-60">
-
             <span className="text-xs bg-gray-200 px-3 py-1 rounded-full text-gray-600">
               EM BREVE
             </span>
@@ -42,17 +37,14 @@ export default function Jornada() {
             <p className="text-gray-500">
               Como posicionar a Hero para atrair os talentos certos.
             </p>
-
           </div>
 
 
           {/* R&S (ATIVO) */}
-
           <Link
-            href="/modulos"
+            href="/rs"
             className="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition"
           >
-
             <h2 className="text-xl font-semibold mb-2">
               Recrutamento & Seleção
             </h2>
@@ -60,14 +52,11 @@ export default function Jornada() {
             <p className="text-gray-500">
               Aprenda a executar corretamente os processos de R&S na Hero.
             </p>
-
           </Link>
 
 
           {/* Admissão */}
-
           <div className="bg-gray-100 p-8 rounded-2xl opacity-60">
-
             <span className="text-xs bg-gray-200 px-3 py-1 rounded-full text-gray-600">
               EM BREVE
             </span>
@@ -79,14 +68,11 @@ export default function Jornada() {
             <p className="text-gray-500">
               Estruturação do processo de entrada do colaborador.
             </p>
-
           </div>
 
 
           {/* Onboarding Institucional */}
-
           <div className="bg-gray-100 p-8 rounded-2xl opacity-60">
-
             <span className="text-xs bg-gray-200 px-3 py-1 rounded-full text-gray-600">
               EM BREVE
             </span>
@@ -98,14 +84,11 @@ export default function Jornada() {
             <p className="text-gray-500">
               Integração cultural e entendimento da empresa.
             </p>
-
           </div>
 
 
           {/* Onboarding da Área */}
-
           <div className="bg-gray-100 p-8 rounded-2xl opacity-60">
-
             <span className="text-xs bg-gray-200 px-3 py-1 rounded-full text-gray-600">
               EM BREVE
             </span>
@@ -117,14 +100,11 @@ export default function Jornada() {
             <p className="text-gray-500">
               Integração com a equipe e responsabilidades da função.
             </p>
-
           </div>
 
 
           {/* Desenvolvimento */}
-
           <div className="bg-gray-100 p-8 rounded-2xl opacity-60">
-
             <span className="text-xs bg-gray-200 px-3 py-1 rounded-full text-gray-600">
               EM BREVE
             </span>
@@ -136,14 +116,11 @@ export default function Jornada() {
             <p className="text-gray-500">
               Crescimento e evolução do colaborador dentro da Hero.
             </p>
-
           </div>
 
 
           {/* Engajamento */}
-
           <div className="bg-gray-100 p-8 rounded-2xl opacity-60">
-
             <span className="text-xs bg-gray-200 px-3 py-1 rounded-full text-gray-600">
               EM BREVE
             </span>
@@ -155,14 +132,11 @@ export default function Jornada() {
             <p className="text-gray-500">
               Ações para fortalecer conexão e cultura.
             </p>
-
           </div>
 
 
           {/* Retenção */}
-
           <div className="bg-gray-100 p-8 rounded-2xl opacity-60">
-
             <span className="text-xs bg-gray-200 px-3 py-1 rounded-full text-gray-600">
               EM BREVE
             </span>
@@ -174,14 +148,11 @@ export default function Jornada() {
             <p className="text-gray-500">
               Estratégias para manter talentos na Hero.
             </p>
-
           </div>
 
 
           {/* Offboarding */}
-
           <div className="bg-gray-100 p-8 rounded-2xl opacity-60">
-
             <span className="text-xs bg-gray-200 px-3 py-1 rounded-full text-gray-600">
               EM BREVE
             </span>
@@ -193,13 +164,10 @@ export default function Jornada() {
             <p className="text-gray-500">
               Encerramento saudável da jornada do colaborador.
             </p>
-
           </div>
 
         </div>
-
       </div>
-
     </main>
   );
 }
