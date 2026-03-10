@@ -40,7 +40,7 @@ export default function Jornada() {
           </div>
 
 
-          {/* R&S (ATIVO) */}
+          {/* R&S */}
           <Link
             href="/rs"
             className="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition"
@@ -103,20 +103,19 @@ export default function Jornada() {
           </div>
 
 
-          {/* Desenvolvimento */}
-          <div className="bg-gray-100 p-8 rounded-2xl opacity-60">
-            <span className="text-xs bg-gray-200 px-3 py-1 rounded-full text-gray-600">
-              EM BREVE
-            </span>
-
-            <h2 className="text-xl font-semibold mt-4 mb-2">
+          {/* Desenvolvimento (ATIVO) */}
+          <Link
+            href="/desenvolvimento"
+            className="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h2 className="text-xl font-semibold mb-2">
               Desenvolvimento
             </h2>
 
             <p className="text-gray-500">
               Crescimento e evolução do colaborador dentro da Hero.
             </p>
-          </div>
+          </Link>
 
 
           {/* Engajamento */}
