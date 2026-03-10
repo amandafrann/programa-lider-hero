@@ -50,7 +50,8 @@ export default function Jornada() {
             </h2>
 
             <p className="text-gray-500">
-              Aprenda a executar corretamente os processos de R&S na Hero.
+              Aprenda a conduzir corretamente processos de R&S,
+              desde a definição da vaga até o fechamento da contratação.
             </p>
           </Link>
 
@@ -103,7 +104,7 @@ export default function Jornada() {
           </div>
 
 
-          {/* Desenvolvimento (ATIVO) */}
+          {/* Desenvolvimento */}
           <Link
             href="/desenvolvimento"
             className="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition"
@@ -113,7 +114,8 @@ export default function Jornada() {
             </h2>
 
             <p className="text-gray-500">
-              Crescimento e evolução do colaborador dentro da Hero.
+              Aprenda como desenvolver pessoas, conduzir feedbacks
+              e evoluir talentos dentro da Hero.
             </p>
           </Link>
 
