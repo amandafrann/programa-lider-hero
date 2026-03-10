@@ -8,15 +8,15 @@ export default function LessonLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen bg-white">
 
       {/* SIDEBAR */}
 
-      <div className="w-72 border-r bg-white p-6">
+      <aside className="w-72 border-r bg-white p-6">
 
         <Link
           href="/desenvolvimento"
-          className="text-sm text-gray-500 mb-6 block hover:underline"
+          className="text-sm text-gray-500 mb-8 block hover:underline"
         >
           ← Voltar para desenvolvimento
         </Link>
@@ -25,7 +25,7 @@ export default function LessonLayout({
           Gestão de Performance
         </h2>
 
-        <div className="space-y-3">
+        <nav className="space-y-3">
 
           <Link
             href="/desenvolvimento/performance/feedback"
@@ -62,21 +62,26 @@ export default function LessonLayout({
             Yellow Flag
           </Link>
 
-        </div>
+        </nav>
 
-      </div>
+      </aside>
+
 
       {/* CONTEÚDO */}
 
-      <div className="flex-1 p-16 max-w-4xl">
+      <main className="flex-1 p-16 max-w-4xl">
 
-        <h1 className="text-4xl font-bold mb-4">
+        <h1 className="text-4xl font-bold mb-6">
           {title}
         </h1>
 
-        {children}
+        <div className="space-y-6">
 
-      </div>
+          {children}
+
+        </div>
+
+      </main>
 
     </div>
   );
