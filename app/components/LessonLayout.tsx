@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -34,19 +36,17 @@ export default function LessonLayout({
     },
   ];
 
-  const currentIndex = lessons.findIndex(
-    (lesson) => lesson.path === pathname
-  );
+  const getLinkClass = (path: string) => {
+    const isActive = pathname === path;
 
-  const previousLesson = lessons[currentIndex - 1];
-  const nextLesson = lessons[currentIndex + 1];
-
-  const linkClass = (path: string) =>
-    `block px-4 py-3 rounded-lg transition ${
-      pathname === path
-        ? "bg-black text-white"
+    return `
+      block px-4 py-3 rounded-lg transition
+      ${isActive
+        ? "bg-gray-300 text-black font-medium"
         : "bg-gray-100 hover:bg-gray-200"
-    }`;
+      }
+    `;
+  };
 
   return (
     <div className="flex min-h-screen bg-white">
@@ -72,7 +72,7 @@ export default function LessonLayout({
             <Link
               key={lesson.path}
               href={lesson.path}
-              className={linkClass(lesson.path)}
+              className={getLinkClass(lesson.path)}
             >
               {lesson.name}
             </Link>
@@ -91,35 +91,8 @@ export default function LessonLayout({
           {title}
         </h1>
 
-        <div className="space-y-6 mb-16">
+        <div className="space-y-6">
           {children}
-        </div>
-
-
-        {/* NAVEGAÇÃO ENTRE AULAS */}
-
-        <div className="flex justify-between border-t pt-6">
-
-          {previousLesson ? (
-            <Link
-              href={previousLesson.path}
-              className="text-gray-600 hover:text-black"
-            >
-              ← {previousLesson.name}
-            </Link>
-          ) : (
-            <div />
-          )}
-
-          {nextLesson && (
-            <Link
-              href={nextLesson.path}
-              className="text-gray-600 hover:text-black"
-            >
-              {nextLesson.name} →
-            </Link>
-          )}
-
         </div>
 
       </main>
