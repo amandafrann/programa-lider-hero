@@ -79,7 +79,7 @@ export default function Aula2() {
           </Link>
 
           <Link
-            href="/modulo-2"
+            href="/rs/temas/abertura-alinhamento"
             className="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200"
           >
             Ir para Módulo 2 →
