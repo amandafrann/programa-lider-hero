@@ -14,7 +14,7 @@ export default function JornadaPage() {
         </Link>
 
         <h1 className="text-4xl font-bold mb-4">
-          Jornada do Colaborador
+          Jornada do Colaborador Hero
         </h1>
 
         <p className="text-gray-500 mb-12">
