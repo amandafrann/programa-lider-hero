@@ -1,5 +1,4 @@
-// teste commit
-// rs temas update
+// update rs structure
 import Link from "next/link";
 
 export default function RSPage() {
