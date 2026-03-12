@@ -72,7 +72,7 @@ export default function Aula2() {
         <div className="flex justify-between">
 
           <Link
-            href="/modulo-1/aula-1"
+            href="/rs/temas/planejamento-vaga"
             className="text-gray-400 hover:text-white"
           >
             ← Aula anterior
