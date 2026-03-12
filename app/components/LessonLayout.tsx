@@ -3,38 +3,26 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+type Lesson = {
+  name: string;
+  path: string;
+};
+
 export default function LessonLayout({
   title,
   children,
+  lessons,
+  backLink,
+  sectionTitle,
 }: {
   title: string;
   children: React.ReactNode;
+  lessons: Lesson[];
+  backLink: string;
+  sectionTitle: string;
 }) {
 
   const pathname = usePathname();
-
-  const lessons = [
-    {
-      name: "Feedback",
-      path: "/desenvolvimento/performance/feedback",
-    },
-    {
-      name: "Pulso",
-      path: "/desenvolvimento/performance/pulso",
-    },
-    {
-      name: "Calibração",
-      path: "/desenvolvimento/performance/calibracao",
-    },
-    {
-      name: "1:1",
-      path: "/desenvolvimento/performance/one-on-one",
-    },
-    {
-      name: "Yellow Flag",
-      path: "/desenvolvimento/performance/yellow-flag",
-    },
-  ];
 
   const getLinkClass = (path: string) => {
     const isActive = pathname === path;
@@ -56,14 +44,14 @@ export default function LessonLayout({
       <aside className="w-72 border-r bg-white p-6">
 
         <Link
-          href="/desenvolvimento"
+          href={backLink}
           className="text-sm text-gray-500 mb-8 block hover:underline"
         >
-          ← Voltar para desenvolvimento
+          ← Voltar
         </Link>
 
         <h2 className="font-semibold text-lg mb-6">
-          Gestão de Performance
+          {sectionTitle}
         </h2>
 
         <nav className="space-y-3">
