@@ -1,42 +1,82 @@
 import Link from "next/link";
 
-export default function PlanejamentoPage() {
+export default function RSPage() {
   return (
     <main className="min-h-screen bg-gray-50 flex justify-center py-20">
 
       <div className="max-w-5xl w-full px-8">
 
         <Link
-          href="/rs"
+          href="/jornada"
           className="text-gray-500 hover:text-gray-800 mb-8 inline-block"
         >
-          ← Voltar para R&S
+          ← Voltar para jornada
         </Link>
 
         <h1 className="text-4xl font-bold mb-4">
-          Planejamento da vaga
+          Recrutamento & Seleção
         </h1>
 
         <p className="text-gray-500 mb-12">
-          Antes de iniciar um processo seletivo, o líder deve garantir clareza
-          sobre a necessidade da contratação e alinhar expectativas com People.
+          Aprenda como conduzir processos de recrutamento desde o planejamento
+          da vaga até a decisão final de contratação.
         </p>
 
-
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-6">
 
           <Link
-            href="/rs/planejamento/aula-1"
-            className="bg-white border rounded-lg p-4 hover:shadow-sm transition"
+            href="/rs/planejamento"
+            className="border rounded-xl p-6 hover:bg-gray-50 transition"
           >
-            Acionar Agente Estratégico
+            <h3 className="font-semibold mb-2">
+              Planejamento da vaga
+            </h3>
+
+            <p className="text-sm text-gray-600">
+              Definir necessidade, escopo da vaga e alinhamento com People.
+            </p>
           </Link>
 
+
           <Link
-            href="/rs/planejamento/aula-2"
-            className="bg-white border rounded-lg p-4 hover:shadow-sm transition"
+            href="/rs/abertura"
+            className="border rounded-xl p-6 hover:bg-gray-50 transition"
           >
-            Alinhamento da vaga com People
+            <h3 className="font-semibold mb-2">
+              Abertura e alinhamento
+            </h3>
+
+            <p className="text-sm text-gray-600">
+              Como abrir uma vaga e iniciar o processo seletivo.
+            </p>
+          </Link>
+
+
+          <Link
+            href="/rs/conducao"
+            className="border rounded-xl p-6 hover:bg-gray-50 transition"
+          >
+            <h3 className="font-semibold mb-2">
+              Condução do processo
+            </h3>
+
+            <p className="text-sm text-gray-600">
+              Como conduzir entrevistas e avaliar candidatos.
+            </p>
+          </Link>
+
+
+          <Link
+            href="/rs/decisao"
+            className="border rounded-xl p-6 hover:bg-gray-50 transition"
+          >
+            <h3 className="font-semibold mb-2">
+              Decisão e fechamento
+            </h3>
+
+            <p className="text-sm text-gray-600">
+              Tomada de decisão, proposta e fechamento da vaga.
+            </p>
           </Link>
 
         </div>
