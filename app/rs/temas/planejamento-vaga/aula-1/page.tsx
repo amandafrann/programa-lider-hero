@@ -7,7 +7,7 @@ export default function Aula1() {
 
         {/* Navegação */}
         <Link
-          href="/jornada/rs"
+          href="/rs"
           className="text-gray-400 hover:text-white"
         >
           ← Voltar para trilha
