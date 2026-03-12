@@ -2,7 +2,33 @@ import LessonLayout from "@/app/components/LessonLayout";
 
 export default function FeedbackPage() {
   return (
-    <LessonLayout title="Feedback">
+    <LessonLayout
+      title="Feedback"
+      backLink="/desenvolvimento"
+      sectionTitle="Gestão de Performance"
+      lessons={[
+        {
+          name: "Feedback",
+          path: "/desenvolvimento/performance/feedback",
+        },
+        {
+          name: "Pulso",
+          path: "/desenvolvimento/performance/pulso",
+        },
+        {
+          name: "Calibração",
+          path: "/desenvolvimento/performance/calibracao",
+        },
+        {
+          name: "1:1",
+          path: "/desenvolvimento/performance/one-on-one",
+        },
+        {
+          name: "Yellow Flag",
+          path: "/desenvolvimento/performance/yellow-flag",
+        },
+      ]}
+    >
 
       <p className="text-gray-600 mb-10">
         Feedback é uma das ferramentas mais importantes de liderança.
