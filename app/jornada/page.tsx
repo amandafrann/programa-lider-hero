@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function JornadaPage() {
   return (
-    <main className="min-h-screen bg-gray-50 flex justify-center py-20">
+    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white flex justify-center py-20">
 
       <div className="max-w-6xl w-full px-8">
 
@@ -22,13 +22,14 @@ export default function JornadaPage() {
         </p>
 
 
-        {/* GRID DE CARDS */}
+        {/* GRID */}
 
         <div className="grid md:grid-cols-3 gap-8">
 
+
           {/* ATRAÇÃO */}
 
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 opacity-50">
+          <div className="bg-white rounded-2xl p-8 border border-gray-100 opacity-50 shadow-sm">
 
             <span className="text-xs bg-gray-100 px-3 py-1 rounded-full">
               EM BREVE
@@ -49,10 +50,20 @@ export default function JornadaPage() {
 
           <Link
             href="/rs"
-            className="group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+            className="group relative bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
           >
 
-            <div className="bg-gradient-to-r from-pink-500 to-purple-500 w-10 h-10 rounded-lg mb-6"></div>
+            {/* glow */}
+
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-pink-500/20 blur-3xl rounded-full"></div>
+
+            {/* badge */}
+
+            <span className="text-xs bg-pink-100 text-pink-600 px-3 py-1 rounded-full">
+              DISPONÍVEL
+            </span>
+
+            <div className="bg-gradient-to-r from-pink-500 to-purple-500 w-10 h-10 rounded-lg mb-6 mt-4"></div>
 
             <h3 className="text-xl font-semibold mb-2">
               Recrutamento & Seleção
@@ -72,7 +83,7 @@ export default function JornadaPage() {
 
           {/* ADMISSÃO */}
 
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 opacity-50">
+          <div className="bg-white rounded-2xl p-8 border border-gray-100 opacity-50 shadow-sm">
 
             <span className="text-xs bg-gray-100 px-3 py-1 rounded-full">
               EM BREVE
@@ -91,7 +102,7 @@ export default function JornadaPage() {
 
           {/* ONBOARDING INSTITUCIONAL */}
 
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 opacity-50">
+          <div className="bg-white rounded-2xl p-8 border border-gray-100 opacity-50 shadow-sm">
 
             <span className="text-xs bg-gray-100 px-3 py-1 rounded-full">
               EM BREVE
@@ -110,7 +121,7 @@ export default function JornadaPage() {
 
           {/* ONBOARDING ÁREA */}
 
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 opacity-50">
+          <div className="bg-white rounded-2xl p-8 border border-gray-100 opacity-50 shadow-sm">
 
             <span className="text-xs bg-gray-100 px-3 py-1 rounded-full">
               EM BREVE
@@ -131,10 +142,16 @@ export default function JornadaPage() {
 
           <Link
             href="/desenvolvimento"
-            className="group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+            className="group relative bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
           >
 
-            <div className="bg-gradient-to-r from-purple-500 to-indigo-500 w-10 h-10 rounded-lg mb-6"></div>
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-purple-500/20 blur-3xl rounded-full"></div>
+
+            <span className="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full">
+              DISPONÍVEL
+            </span>
+
+            <div className="bg-gradient-to-r from-purple-500 to-indigo-500 w-10 h-10 rounded-lg mb-6 mt-4"></div>
 
             <h3 className="text-xl font-semibold mb-2">
               Desenvolvimento
