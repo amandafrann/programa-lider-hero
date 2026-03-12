@@ -1,4 +1,3 @@
-// update rs structure
 import Link from "next/link";
 
 export default function RSPage() {
@@ -6,7 +5,6 @@ export default function RSPage() {
     <div className="flex min-h-screen">
 
       {/* SIDEBAR */}
-
       <div className="w-72 border-r bg-white p-6">
 
         <Link
@@ -30,7 +28,6 @@ export default function RSPage() {
 
 
       {/* CONTEÚDO */}
-
       <div className="flex-1 p-16 max-w-5xl">
 
         <h1 className="text-4xl font-bold mb-4">
@@ -39,18 +36,13 @@ export default function RSPage() {
 
         <p className="text-gray-600 mb-10">
           Nesta jornada você aprenderá como conduzir um processo
-          de recrutamento desde o planejamento da vaga até
-          a decisão final de contratação.
+          de recrutamento desde o planejamento da vaga até a
+          decisão final de contratação.
         </p>
 
 
 
         {/* TEMAS */}
-
-        <h2 className="text-xl font-semibold mb-6">
-          Etapas do processo
-        </h2>
-
         <div className="grid grid-cols-2 gap-6">
 
           <Link
@@ -68,7 +60,6 @@ export default function RSPage() {
           </Link>
 
 
-
           <Link
             href="/rs/temas/abertura-alinhamento"
             className="border rounded-xl p-6 hover:bg-gray-50 transition"
@@ -82,7 +73,6 @@ export default function RSPage() {
               comece corretamente.
             </p>
           </Link>
-
 
 
           <Link
@@ -100,7 +90,6 @@ export default function RSPage() {
           </Link>
 
 
-
           <Link
             href="/rs/temas/decisao-fechamento"
             className="border rounded-xl p-6 hover:bg-gray-50 transition"
@@ -110,8 +99,8 @@ export default function RSPage() {
             </h3>
 
             <p className="text-sm text-gray-600">
-              Como tomar decisões, fazer oferta e
-              concluir o processo seletivo.
+              Como tomar decisões, fazer oferta e concluir
+              o processo seletivo.
             </p>
           </Link>
 
