@@ -6,7 +6,7 @@ export default function Aula2() {
       <div className="max-w-3xl space-y-10">
 
         <Link
-          href="/modulo-1"
+          href="/rs/temas/planejamento-vaga/aula-1"
           className="text-gray-400 hover:text-white"
         >
           ← Voltar para Módulo 1
