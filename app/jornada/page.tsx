@@ -50,8 +50,8 @@ export default function Jornada() {
             </h2>
 
             <p className="text-gray-500">
-              Aprenda a conduzir corretamente processos de R&S,
-              desde a definição da vaga até o fechamento da contratação.
+              Aprenda a conduzir processos de R&S desde o planejamento da vaga
+              até a decisão final de contratação.
             </p>
           </Link>
 
