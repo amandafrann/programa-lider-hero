@@ -9,7 +9,7 @@ export default function Aula2() {
           href="/rs/temas/planejamento-vaga/aula-1"
           className="text-gray-400 hover:text-white"
         >
-          ← Voltar para Módulo 1
+          ← Aula anterior
         </Link>
 
         <h1 className="text-4xl font-bold">
@@ -21,7 +21,6 @@ export default function Aula2() {
         </p>
 
         {/* Progresso da trilha */}
-
         <div>
           <p className="text-sm text-gray-400 mb-2">
             Progresso da trilha
@@ -36,6 +35,7 @@ export default function Aula2() {
           </p>
         </div>
 
+        {/* Responsabilidade */}
         <div className="bg-zinc-900 p-6 rounded-xl">
           <h2 className="text-xl font-semibold mb-2">
             Responsabilidade do líder
@@ -46,6 +46,7 @@ export default function Aula2() {
           </p>
         </div>
 
+        {/* Passo a passo */}
         <div className="bg-zinc-900 p-6 rounded-xl">
           <h2 className="text-xl font-semibold mb-2">
             Passo a passo
@@ -59,6 +60,7 @@ export default function Aula2() {
           </ol>
         </div>
 
+        {/* Expectativa */}
         <div className="bg-zinc-900 p-6 rounded-xl">
           <h2 className="text-xl font-semibold mb-2">
             Expectativa de People
@@ -69,10 +71,11 @@ export default function Aula2() {
           </p>
         </div>
 
+        {/* Navegação */}
         <div className="flex justify-between">
 
           <Link
-            href="/rs/temas/planejamento-vaga"
+            href="/rs/temas/planejamento-vaga/aula-1"
             className="text-gray-400 hover:text-white"
           >
             ← Aula anterior
@@ -82,7 +85,7 @@ export default function Aula2() {
             href="/rs/temas/abertura-alinhamento"
             className="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200"
           >
-            Ir para Módulo 2 →
+            Próximo tema →
           </Link>
 
         </div>
