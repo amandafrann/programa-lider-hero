@@ -7,10 +7,10 @@ export default function Aula1() {
 
         {/* Navegação */}
         <Link
-          href="/rs"
+          href="/rs/temas/planejamento-vaga"
           className="text-gray-400 hover:text-white"
         >
-          ← Voltar para trilha
+          ← Voltar para Planejamento da vaga
         </Link>
 
         {/* Título */}
@@ -91,7 +91,7 @@ export default function Aula1() {
         {/* Navegação entre aulas */}
         <div className="flex justify-end pt-10">
           <Link
-            href="/modulo-1/aula-2"
+            href="/rs/temas/planejamento-vaga/aula-2"
             className="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200 transition"
           >
             Próxima aula →
