@@ -1,23 +1,6 @@
-import LessonLayout from "@/app/components/LessonLayout";
-
 export default function AberturaPage() {
   return (
-    <LessonLayout
-      title="Abrir vaga na Gupy"
-      backLink="/rs"
-      sectionTitle="R&S"
-      lessons={[
-        {
-          name: "Abrir vaga na Gupy",
-          path: "/rs/abertura",
-        },
-        {
-          name: "Alinhamento com R&S",
-          path: "/rs/abertura/alinhamento",
-        },
-      ]}
-    >
-
+    <>
       <p className="text-gray-600 mb-10">
         Após utilizar a IA de People para estruturar a vaga,
         o próximo passo é realizar a abertura da requisição na Gupy.
@@ -46,7 +29,6 @@ export default function AberturaPage() {
           Depois disso, anexe o relatório gerado pela IA na justificativa da vaga.
         </p>
       </div>
-
-    </LessonLayout>
+    </>
   );
 }
