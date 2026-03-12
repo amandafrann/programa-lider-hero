@@ -16,7 +16,7 @@ export default function RSPage() {
         </Link>
 
         <h2 className="font-semibold text-lg mb-6">
-          Recrutamento & Seleção
+          R&S para Líderes
         </h2>
 
         <p className="text-sm text-gray-500">
@@ -27,28 +27,34 @@ export default function RSPage() {
       </div>
 
 
+
       {/* CONTEÚDO */}
 
-      <div className="flex-1 p-16 max-w-4xl">
+      <div className="flex-1 p-16 max-w-5xl">
 
         <h1 className="text-4xl font-bold mb-4">
           Recrutamento & Seleção
         </h1>
 
-        <p className="text-gray-600 mb-12">
+        <p className="text-gray-600 mb-10">
           Nesta jornada você aprenderá como conduzir um processo
-          de recrutamento desde a definição da vaga até o fechamento
-          da contratação.
+          de recrutamento desde o planejamento da vaga até
+          a decisão final de contratação.
         </p>
 
 
-        {/* BLOCOS */}
+
+        {/* TEMAS */}
+
+        <h2 className="text-xl font-semibold mb-6">
+          Etapas do processo
+        </h2>
 
         <div className="grid grid-cols-2 gap-6">
 
           <Link
             href="/rs/temas/planejamento-vaga"
-            className="bg-gray-100 p-6 rounded-xl hover:bg-gray-200 transition"
+            className="border rounded-xl p-6 hover:bg-gray-50 transition"
           >
             <h3 className="font-semibold mb-2">
               Planejamento da vaga
@@ -61,9 +67,10 @@ export default function RSPage() {
           </Link>
 
 
+
           <Link
             href="/rs/temas/abertura-alinhamento"
-            className="bg-gray-100 p-6 rounded-xl hover:bg-gray-200 transition"
+            className="border rounded-xl p-6 hover:bg-gray-50 transition"
           >
             <h3 className="font-semibold mb-2">
               Abertura e alinhamento
@@ -76,9 +83,10 @@ export default function RSPage() {
           </Link>
 
 
+
           <Link
             href="/rs/temas/conducao-processo"
-            className="bg-gray-100 p-6 rounded-xl hover:bg-gray-200 transition"
+            className="border rounded-xl p-6 hover:bg-gray-50 transition"
           >
             <h3 className="font-semibold mb-2">
               Condução do processo
@@ -91,9 +99,10 @@ export default function RSPage() {
           </Link>
 
 
+
           <Link
             href="/rs/temas/decisao-fechamento"
-            className="bg-gray-100 p-6 rounded-xl hover:bg-gray-200 transition"
+            className="border rounded-xl p-6 hover:bg-gray-50 transition"
           >
             <h3 className="font-semibold mb-2">
               Decisão e fechamento
