@@ -2,7 +2,10 @@ import LessonLayout from "@/app/components/LessonLayout";
 
 export default function CalibracaoPage() {
   return (
-    <LessonLayout title="Calibração">
+    <LessonLayout
+      title="Calibração"
+      description="Ritual semestral da Hero que garante alinhamento entre líderes nas avaliações de performance."
+    >
 
       <p className="text-gray-600 mb-10">
         A Calibração é um ritual semestral da Hero que transforma avaliações
@@ -25,7 +28,8 @@ export default function CalibracaoPage() {
         </p>
       </div>
 
-      {/* O QUE SÃO ROTAS */}
+
+      {/* ROTAS DE DESENVOLVIMENTO */}
 
       <div className="bg-gray-50 p-6 rounded-lg mb-8">
 
@@ -64,6 +68,7 @@ export default function CalibracaoPage() {
         </ul>
 
       </div>
+
 
       {/* COMO FUNCIONA */}
 
@@ -104,6 +109,7 @@ export default function CalibracaoPage() {
 
       </div>
 
+
       {/* PAPEL DO LÍDER */}
 
       <div className="bg-gray-50 p-6 rounded-lg mb-8">
@@ -125,6 +131,7 @@ export default function CalibracaoPage() {
         </ul>
 
       </div>
+
 
       {/* RESULTADO ESPERADO */}
 
