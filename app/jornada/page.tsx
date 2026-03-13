@@ -16,6 +16,15 @@ export default function JornadaPage() {
         </Link>
 
 
+        {/* TAG NOVA PARA TESTAR DEPLOY */}
+
+        <div className="mb-6">
+          <span className="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full">
+            Plataforma em evolução 🚀
+          </span>
+        </div>
+
+
         {/* HEADER */}
 
         <div className="mb-16">
@@ -68,8 +77,6 @@ export default function JornadaPage() {
             href="/rs"
             className="group relative bg-white rounded-2xl p-8 border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
           >
-
-            {/* glow */}
 
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-pink-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition"></div>
 
@@ -201,7 +208,6 @@ export default function JornadaPage() {
             </div>
 
           </Link>
-
 
         </div>
 
