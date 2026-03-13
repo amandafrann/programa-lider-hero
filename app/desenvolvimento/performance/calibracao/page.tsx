@@ -1,3 +1,4 @@
+title="Calibração Hero"
 import LessonLayout from "@/app/components/LessonLayout";
 
 export default function CalibracaoPage() {
