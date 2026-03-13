@@ -16,21 +16,29 @@ export default function PlanejamentoPage() {
         </Link>
 
 
-        {/* TÍTULO */}
+        {/* HEADER */}
 
-        <h1 className="text-4xl font-bold mb-4">
-          Planejamento da vaga
-        </h1>
+        <div className="mb-12">
 
-        <p className="text-gray-600 mb-10">
-          Antes de iniciar um processo seletivo, o líder deve garantir clareza
-          sobre a necessidade da contratação e alinhar expectativas com People.
-        </p>
+          <h1 className="text-4xl font-bold mb-4">
+            Planejamento da vaga
+          </h1>
+
+          <p className="text-gray-600 max-w-2xl">
+            Antes de iniciar um processo seletivo, o líder deve garantir clareza
+            sobre a necessidade da contratação e alinhar expectativas com People.
+          </p>
+
+          <p className="text-sm text-gray-400 mt-3">
+            ⏱ Tempo de leitura: 3 min
+          </p>
+
+        </div>
 
 
         {/* OBJETIVO */}
 
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg mb-8">
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-xl mb-8">
 
           <h3 className="font-semibold mb-3">
             ⚡ Objetivo da etapa
@@ -47,12 +55,44 @@ export default function PlanejamentoPage() {
             da contratação.
           </p>
 
-          <p className="mb-2">Esse fluxo ajuda a:</p>
+          <p className="mb-2">
+            Esse fluxo ajuda a:
+          </p>
 
           <ul className="list-disc ml-6 space-y-1">
+
             <li>dar mais clareza sobre o objetivo da vaga</li>
+
             <li>evitar aberturas precipitadas</li>
+
             <li>alinhar expectativas com o time de People</li>
+
+          </ul>
+
+        </div>
+
+
+        {/* QUANDO USAR */}
+
+        <div className="bg-gray-50 border border-gray-200 p-6 rounded-xl mb-8">
+
+          <h3 className="font-semibold mb-3">
+            🧭 Quando essa etapa acontece
+          </h3>
+
+          <p className="mb-3">
+            O planejamento da vaga deve acontecer sempre que houver
+            necessidade de contratação.
+          </p>
+
+          <ul className="list-disc ml-6 space-y-1">
+
+            <li>expansão do time</li>
+
+            <li>substituição de um colaborador</li>
+
+            <li>criação de uma nova função</li>
+
           </ul>
 
         </div>
@@ -60,7 +100,7 @@ export default function PlanejamentoPage() {
 
         {/* PAPEL DO LÍDER */}
 
-        <div className="bg-gray-50 p-6 rounded-lg mb-8">
+        <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-xl mb-8">
 
           <h3 className="font-semibold mb-4">
             👤 Papel do líder
@@ -98,10 +138,10 @@ export default function PlanejamentoPage() {
 
         {/* PROCESSO */}
 
-        <div className="bg-gray-50 p-6 rounded-lg mb-8">
+        <div className="bg-gray-50 border border-gray-200 p-6 rounded-xl mb-8">
 
           <h3 className="font-semibold mb-4">
-            📋 Processo
+            ⚙️ Como executar
           </h3>
 
           <h4 className="font-medium mb-3">
@@ -134,13 +174,20 @@ export default function PlanejamentoPage() {
             ao abrir a requisição.
           </p>
 
-          <p className="mb-3">
-            O relatório inclui:
-          </p>
+        </div>
+
+
+        {/* RELATÓRIO GERADO */}
+
+        <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-xl mb-8">
+
+          <h3 className="font-semibold mb-4">
+            📄 Informações geradas pelo relatório
+          </h3>
 
           <ul className="list-disc ml-6 space-y-1">
 
-            <li>Contexto</li>
+            <li>Contexto da vaga</li>
 
             <li>Problema identificado</li>
 
@@ -156,9 +203,26 @@ export default function PlanejamentoPage() {
 
             <li>Métrica de sucesso</li>
 
-            <li>Síntese automática</li>
+            <li>Síntese automática do caso</li>
 
           </ul>
+
+        </div>
+
+
+        {/* RESULTADO */}
+
+        <div className="bg-gray-100 p-6 rounded-xl">
+
+          <h3 className="font-semibold mb-3">
+            ✅ Resultado esperado
+          </h3>
+
+          <p>
+            Uma vaga aberta com contexto claro, escopo bem definido
+            e alinhamento entre liderança e People sobre a real
+            necessidade da contratação.
+          </p>
 
         </div>
 
