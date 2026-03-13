@@ -8,19 +8,21 @@ type Lesson = {
   path: string;
 };
 
+type LessonLayoutProps = {
+  title: string;
+  children: React.ReactNode;
+  lessons?: Lesson[];
+  backLink?: string;
+  sectionTitle?: string;
+};
+
 export default function LessonLayout({
   title,
   children,
-  lessons,
-  backLink,
-  sectionTitle,
-}: {
-  title: string;
-  children: React.ReactNode;
-  lessons: Lesson[];
-  backLink: string;
-  sectionTitle: string;
-}) {
+  lessons = [],
+  backLink = "/",
+  sectionTitle = "",
+}: LessonLayoutProps) {
 
   const pathname = usePathname();
 
@@ -29,9 +31,10 @@ export default function LessonLayout({
 
     return `
       block px-4 py-3 rounded-lg transition
-      ${isActive
-        ? "bg-gray-300 text-black font-medium"
-        : "bg-gray-100 hover:bg-gray-200"
+      ${
+        isActive
+          ? "bg-gray-300 text-black font-medium"
+          : "bg-gray-100 hover:bg-gray-200"
       }
     `;
   };
@@ -41,34 +44,38 @@ export default function LessonLayout({
 
       {/* SIDEBAR */}
 
-      <aside className="w-72 border-r bg-white p-6">
+      {lessons.length > 0 && (
+        <aside className="w-72 border-r bg-white p-6">
 
-        <Link
-          href={backLink}
-          className="text-sm text-gray-500 mb-8 block hover:underline"
-        >
-          ← Voltar
-        </Link>
+          <Link
+            href={backLink}
+            className="text-sm text-gray-500 mb-8 block hover:underline"
+          >
+            ← Voltar
+          </Link>
 
-        <h2 className="font-semibold text-lg mb-6">
-          {sectionTitle}
-        </h2>
+          {sectionTitle && (
+            <h2 className="font-semibold text-lg mb-6">
+              {sectionTitle}
+            </h2>
+          )}
 
-        <nav className="space-y-3">
+          <nav className="space-y-3">
 
-          {lessons.map((lesson) => (
-            <Link
-              key={lesson.path}
-              href={lesson.path}
-              className={getLinkClass(lesson.path)}
-            >
-              {lesson.name}
-            </Link>
-          ))}
+            {lessons.map((lesson) => (
+              <Link
+                key={lesson.path}
+                href={lesson.path}
+                className={getLinkClass(lesson.path)}
+              >
+                {lesson.name}
+              </Link>
+            ))}
 
-        </nav>
+          </nav>
 
-      </aside>
+        </aside>
+      )}
 
 
       {/* CONTEÚDO */}
