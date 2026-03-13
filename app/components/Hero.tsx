@@ -2,66 +2,100 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-gray-50 flex items-center justify-center">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-gray-50 to-gray-100 px-8">
 
-      <div className="max-w-6xl grid grid-cols-2 gap-12 items-center px-8">
+      <div className="max-w-6xl w-full border border-gray-200 rounded-3xl p-12 bg-white shadow-sm">
 
-        {/* Texto esquerda */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
 
-        <div>
-          <h1 className="text-6xl font-bold text-gray-900 leading-tight">
-            Programa
-            <span className="text-pink-500"> Líder Hero</span>
-          </h1>
+          {/* TEXTO */}
 
-          <p className="mt-6 text-lg text-gray-500">
-            A plataforma oficial de desenvolvimento de liderança da Company Hero.
-            Aprenda os processos da jornada do colaborador e execute como um líder de alta performance.
-          </p>
+          <div>
 
-          <div className="flex gap-4 mt-8">
+            {/* TAG */}
 
-            <Link
-              href="/jornada"
-              className="bg-black text-white px-6 py-3 rounded-xl hover:opacity-90"
-            >
-              Explorar Jornadas
-            </Link>
+            <span className="inline-block bg-gray-100 text-gray-600 text-sm px-3 py-1 rounded-full mb-6">
+              Academia de Liderança
+            </span>
 
-            <Link
-              href="/wiki"
-              className="border px-6 py-3 rounded-xl hover:bg-gray-100"
-            >
-              Wiki Hero
-            </Link>
 
-          </div>
-        </div>
+            {/* TÍTULO */}
 
-        {/* Card lado direito */}
+            <h1 className="text-6xl font-bold leading-tight mb-6">
 
-        <div className="bg-white shadow-xl rounded-2xl p-8">
+              <span className="block text-gray-900">
+                Programa
+              </span>
 
-          <h3 className="text-lg font-semibold text-gray-800">
-            Resultados Hero
-          </h3>
+              <span className="block text-pink-500">
+                Líder Hero
+              </span>
 
-          <div className="mt-6 space-y-5">
+            </h1>
 
-            <div>
-              <p className="text-sm text-gray-500">Performance</p>
 
-              <div className="w-full bg-gray-200 h-2 rounded-full mt-1">
-                <div className="bg-pink-500 h-2 w-1/4 rounded-full"></div>
-              </div>
+            {/* DESCRIÇÃO */}
+
+            <p className="text-gray-600 text-lg mb-8 max-w-lg">
+              A plataforma oficial de desenvolvimento de liderança da Hero.
+              Aprenda os processos da jornada do colaborador e execute
+              cada etapa com excelência como líder.
+            </p>
+
+
+            {/* BOTÕES */}
+
+            <div className="flex gap-4">
+
+              <Link
+                href="/jornada"
+                className="bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition"
+              >
+                Explorar Jornadas
+              </Link>
+
+              <Link
+                href="/wiki"
+                className="border border-gray-300 px-6 py-3 rounded-xl hover:bg-gray-50 transition"
+              >
+                Wiki Hero
+              </Link>
+
             </div>
 
-            <div>
-              <p className="text-sm text-gray-500">Soft Skills</p>
+          </div>
 
-              <div className="w-full bg-gray-200 h-2 rounded-full mt-1">
-                <div className="bg-purple-500 h-2 w-1/5 rounded-full"></div>
+
+          {/* CARD DIREITA */}
+
+          <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200 shadow-sm">
+
+            <h3 className="font-semibold text-lg mb-6">
+              Como funciona a plataforma
+            </h3>
+
+            <div className="space-y-4 text-gray-700">
+
+              <div className="flex items-center gap-3">
+                <span className="text-xl">🧭</span>
+                <p>Jornada do Colaborador</p>
               </div>
+
+              <div className="flex items-center gap-3 ml-6">
+                <span className="text-lg">↓</span>
+                <p>Etapas da jornada</p>
+              </div>
+
+              <div className="flex items-center gap-3 ml-10">
+                <span className="text-lg">↓</span>
+                <p>Módulos de aprendizagem</p>
+              </div>
+
+              <div className="flex items-center gap-3 ml-14">
+                <span className="text-lg">↓</span>
+                <p>Aulas práticas para líderes</p>
+              </div>
+
             </div>
 
           </div>
