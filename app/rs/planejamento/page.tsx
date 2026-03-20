@@ -21,12 +21,11 @@ export default function PlanejamentoPage() {
         <div className="mb-12">
 
           <h1 className="text-4xl font-bold mb-4">
-            Planejamento da vaga
+            Pré-abertura da vaga: Chatbot de People
           </h1>
 
           <p className="text-gray-600 max-w-2xl">
-            Antes de iniciar um processo seletivo, o líder deve garantir clareza
-            sobre a necessidade da contratação e alinhar expectativas com People.
+            Antes de abrir a vaga na Gupy, utilizamos a IA de People para organizar o contexto da posição e avaliar a real necessidade dessa nova contratação.
           </p>
 
           <p className="text-sm text-gray-400 mt-3">
@@ -45,55 +44,37 @@ export default function PlanejamentoPage() {
           </h3>
 
           <p className="mb-4">
-            Garantir que a abertura de uma nova vaga seja feita de forma
-            estruturada e estratégica.
+            Garantir que a abertura de uma nova vaga seja feita de forma estruturada e estratégica.
           </p>
 
-          <p className="mb-4">
-            Antes de abrir a vaga na Gupy, utilizamos a IA de People para
-            organizar o contexto da posição e avaliar a real necessidade
-            da contratação.
-          </p>
-
-          <p className="mb-2">
-            Esse fluxo ajuda a:
+          <p className="mb-3">
+            Para isso, antes de abrir a vaga na Gupy, utilize a IA de People para:
           </p>
 
           <ul className="list-disc ml-6 space-y-1">
 
-            <li>dar mais clareza sobre o objetivo da vaga</li>
+            <li>Trazer clareza sobre o objetivo da função</li>
 
-            <li>evitar aberturas precipitadas</li>
+            <li>Evitar aberturas precipitadas</li>
 
-            <li>alinhar expectativas com o time de People</li>
+            <li>Alinhar expectativas com o time de People</li>
 
           </ul>
 
         </div>
 
 
-        {/* QUANDO USAR */}
+        {/* IMPORTANTE */}
 
-        <div className="bg-gray-50 border border-gray-200 p-6 rounded-xl mb-8">
+        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl mb-8">
 
-          <h3 className="font-semibold mb-3">
-            🧭 Quando essa etapa acontece
+          <h3 className="font-semibold mb-2">
+            ⚠️ Importante
           </h3>
 
-          <p className="mb-3">
-            O planejamento da vaga deve acontecer sempre que houver
-            necessidade de contratação.
+          <p>
+            Essa etapa acontece sempre que houver necessidade de contratação (expansão, substituição ou criação de nova função).
           </p>
-
-          <ul className="list-disc ml-6 space-y-1">
-
-            <li>expansão do time</li>
-
-            <li>substituição de um colaborador</li>
-
-            <li>criação de uma nova função</li>
-
-          </ul>
 
         </div>
 
@@ -106,30 +87,17 @@ export default function PlanejamentoPage() {
             👤 Papel do líder
           </h3>
 
-          <p className="mb-4">
-            O líder é o principal responsável pela definição da vaga.
-            Cabe a ele garantir que a necessidade da contratação esteja
-            clara antes de iniciar o processo.
-          </p>
-
           <p className="mb-3">
-            Isso inclui:
+            O líder é o principal responsável pela definição da vaga. Cabe a ele garantir:
           </p>
 
-          <ul className="list-disc ml-6 space-y-1">
+          <ul className="list-disc ml-6 space-y-2">
 
-            <li>
-              trazer clareza sobre o contexto da vaga e o momento do time
-            </li>
+            <li>Clareza sobre o contexto da vaga e o momento do time</li>
 
-            <li>
-              definir o escopo da posição e o impacto esperado da contratação
-            </li>
+            <li>Definição objetiva do escopo e do impacto esperado da contratação</li>
 
-            <li>
-              garantir que as informações da vaga estejam bem estruturadas
-              antes da abertura na Gupy
-            </li>
+            <li>Qualidade e estrutura das informações antes da abertura na Gupy</li>
 
           </ul>
 
@@ -144,14 +112,6 @@ export default function PlanejamentoPage() {
             ⚙️ Como executar
           </h3>
 
-          <h4 className="font-medium mb-3">
-            1. Utilizar a IA de People (Slack)
-          </h4>
-
-          <p className="mb-4">
-            Antes de abrir a vaga, acesse o Chatbot de People no Slack.
-          </p>
-
           <ol className="list-decimal ml-6 space-y-2 mb-6">
 
             <li>Acesse Slack → Apps → Chatbot de People</li>
@@ -160,7 +120,7 @@ export default function PlanejamentoPage() {
 
             <li>Clique em <strong>Abertura de vaga</strong> ou digite 2</li>
 
-            <li>Responda às perguntas do agente</li>
+            <li>Responda às perguntas da IA</li>
 
           </ol>
 
@@ -168,11 +128,12 @@ export default function PlanejamentoPage() {
             Ao final da conversa, você receberá um relatório estruturado da vaga.
           </p>
 
-          <p className="mb-4">
-            Esse relatório deve ser anexado na seção
-            <strong> “Dados Internos – Justificativa”</strong> da Gupy
-            ao abrir a requisição.
-          </p>
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-sm">
+
+            <strong>⚠️ Importante:</strong> Esse relatório deve ser anexado na seção{" "}
+            <strong>“Dados Internos – Justificativa”</strong> da Gupy ao abrir a requisição.
+
+          </div>
 
         </div>
 
@@ -193,13 +154,13 @@ export default function PlanejamentoPage() {
 
             <li>Impacto de não abrir a vaga</li>
 
-            <li>Objetivo com a nova contratação</li>
+            <li>Objetivo da nova contratação</li>
 
-            <li>Alternativas que já foram avaliadas</li>
+            <li>Alternativas já avaliadas</li>
 
             <li>Perfil e escopo desejado (prévia)</li>
 
-            <li>Expectativas de entregas para os primeiros 30/60 dias</li>
+            <li>Expectativas para os primeiros 30/60 dias</li>
 
             <li>Métrica de sucesso</li>
 
@@ -218,11 +179,21 @@ export default function PlanejamentoPage() {
             ✅ Resultado esperado
           </h3>
 
-          <p>
-            Uma vaga aberta com contexto claro, escopo bem definido
-            e alinhamento entre liderança e People sobre a real
-            necessidade da contratação.
-          </p>
+          <ul className="list-disc ml-6 space-y-2">
+
+            <li>
+              Vaga aberta com contexto claro, escopo bem definido e alinhamento entre liderança e People
+            </li>
+
+            <li>
+              100% das vagas abertas corretamente via Gupy
+            </li>
+
+            <li>
+              Redução de retrabalho (rebriefing) e recusas por falta de informação
+            </li>
+
+          </ul>
 
         </div>
 
