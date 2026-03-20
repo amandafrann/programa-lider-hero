@@ -1,13 +1,13 @@
 import LessonLayout from "@/app/components/LessonLayout";
 
-export default function AberturaLayout({
+export default function AlinhamentoLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
     <LessonLayout
-      title="Abrir vaga na Gupy"
+      title="Alinhamento com People"
       backLink="/rs"
       sectionTitle="R&S"
       lessons={[
