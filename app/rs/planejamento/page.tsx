@@ -21,7 +21,7 @@ export default function PlanejamentoPage() {
         <div className="mb-12">
 
           <h1 className="text-4xl font-bold mb-4">
-            Pré-abertura da vaga: Chatbot de People
+            Pré-abertura da vaga: IA Chatbot de People
           </h1>
 
           <p className="text-gray-600 max-w-2xl">
@@ -131,7 +131,7 @@ export default function PlanejamentoPage() {
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
 
             <h4 className="font-medium mb-3">
-              📄 Informações geradas pelo relatório
+              📄 Informações geradas pelo relatório:
             </h4>
 
             <ul className="list-disc ml-6 space-y-1 text-sm">
@@ -172,7 +172,7 @@ export default function PlanejamentoPage() {
           <ul className="list-disc ml-6 space-y-2">
 
             <li>
-              Vaga aberta com contexto claro, escopo bem definido e alinhamento entre liderança e People
+              Garantir contexto claro, escopo bem definido e alinhamento entre liderança e People
             </li>
 
             <li>
@@ -180,7 +180,7 @@ export default function PlanejamentoPage() {
             </li>
 
             <li>
-              Redução de retrabalho (rebriefing) e recusas por falta de informação
+              Redução de retrabalho (rebriefing) e/ou recusas por falta de informação
             </li>
 
           </ul>
