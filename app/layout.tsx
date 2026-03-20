@@ -12,13 +12,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
-    default: 'Programa Líder Hero',
-    template: '%s | Programa Líder Hero',
+    default: "Programa Líder Hero",
+    template: "%s | Programa Líder Hero",
   },
-  description: 'Playbook e academia de liderança para execução da jornada do colaborador',
-}
+  description:
+    "Playbook e academia de liderança para execução da jornada do colaborador",
+};
 
 export default function RootLayout({
   children,
@@ -26,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
