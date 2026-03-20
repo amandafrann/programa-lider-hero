@@ -30,7 +30,7 @@ export default function JornadaPage() {
         <div className="mb-16">
 
           <h1 className="text-5xl font-bold mb-6 leading-tight">
-            Jornada do Colaborador
+            Jornada do
             <span className="text-pink-500"> Hero</span>
           </h1>
 
