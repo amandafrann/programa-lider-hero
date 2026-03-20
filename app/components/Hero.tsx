@@ -7,18 +7,18 @@ export default function Hero() {
 
         {/* TAG */}
         <span className="inline-block text-xs font-medium bg-pink-50 text-pink-600 px-3 py-1 rounded-full mb-4">
-          Programa Líder Hero
+          Acesse
         </span>
 
         {/* TÍTULO */}
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-          Potencialize sua{" "}
-          <span className="text-pink-600">Jornada de Liderança</span>
+          Programa{" "}
+          <span className="text-pink-600">Líder Hero</span>
         </h1>
 
         {/* DESCRIÇÃO */}
         <p className="text-gray-600 mb-6 max-w-lg">
-          A plataforma prática para líderes executarem processos da jornada do colaborador com clareza, consistência e impacto real no negócio.
+          A plataforma prática para líderes executarem processos com clareza, consistência e impacto real em negócios e cultura.
         </p>
 
         {/* BOTÕES */}
