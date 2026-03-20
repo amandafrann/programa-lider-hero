@@ -29,7 +29,6 @@ export default function AberturaPage() {
               <li>Clique em <strong>+ Criar nova vaga</strong></li>
             </ul>
 
-            {/* IMAGENS */}
             <div className="mt-4 space-y-3">
               <img src="https://i.imgur.com/DPpCkH4.png" className="rounded-lg border" />
               <img src="https://i.imgur.com/eM90ZZs.png" className="rounded-lg border" />
@@ -78,20 +77,51 @@ export default function AberturaPage() {
               ⚠️ Essa parte é o que torna a vaga mais atrativa — capriche.
             </div>
 
-            {/* TOGGLE */}
+            {/* TOGGLE COMPLETO */}
             <details className="mt-4 bg-gray-100 p-4 rounded-md cursor-pointer">
               <summary className="font-medium">
                 📄 Ver template de referência
               </summary>
 
-              <div className="mt-3 text-sm space-y-3">
+              <div className="mt-4 text-sm space-y-4 leading-relaxed">
 
                 <p>
-                  Ter um currículo compatível é importante, mas na <strong>Hero</strong> acreditamos que escolher um novo integrante vai muito além disso...
+                  Ter um currículo compatível é importante, mas na <strong>Hero</strong> acreditamos que escolher um novo integrante do time vai muito além disso. O que realmente buscamos é protagonismo, atitude e conexão com a nossa missão: <strong>transformar o futuro do trabalho independente 🚀</strong>
                 </p>
 
-                <p>
-                  👉 Preencha o campo <strong>“Sobre o desafio”</strong> com um texto atrativo e claro.
+                <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-600">
+                  Somos um time que aprende rápido, trabalha junto e transforma desafios em resultados. Valorizamos o respeito, a curiosidade e a força da diversidade, porque quando diferentes perspectivas se encontram, grandes ideias nascem!
+                </blockquote>
+
+                <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-600">
+                  Estamos em um momento único: dobrando de tamanho ano após ano, com um time de alto nível e conquistando cada vez mais espaço no mercado. Esse é o lugar certo para quem quer aprender muito, deixar sua marca e construir <strong>algo relevante de verdade 🖤</strong>
+                </blockquote>
+
+                <div>
+                  <p className="font-medium mb-2">O que você vai encontrar aqui:</p>
+
+                  <ul className="space-y-1">
+                    <li>✨ Um ambiente <strong>colaborativo, diverso e dinâmico</strong>.</li>
+                    <li>🚀 Muito espaço para <strong>autonomia, aprendizado e crescimento acelerado</strong>.</li>
+                    <li>🌍 Oportunidade de participar da construção de um <strong>case de impacto real no mercado</strong>.</li>
+                    <li>🏆 Uma empresa <strong>financeiramente sólida, premiada e reconhecida pelo mercado</strong>.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p className="font-medium mt-4">Sobre o desafio:</p>
+
+                  <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-600 mt-2">
+                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                  </blockquote>
+
+                  <p className="text-gray-500 text-xs mt-2">
+                    (LÍDER: escreva uma chamada atrativa que reflita o desafio da vaga e desperte interesse real no candidato)
+                  </p>
+                </div>
+
+                <p className="mt-4">
+                  👉 Quer fazer parte dessa história e deixar o seu legado? <strong>Vem ser Hero!!</strong>
                 </p>
 
               </div>
