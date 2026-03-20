@@ -1,87 +1,72 @@
 export default function Hero() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-28">
+    <section className="relative overflow-hidden">
 
-      <div className="grid md:grid-cols-2 gap-16 items-center">
+      {/* BACKGROUND GRADIENT */}
+      <div className="absolute inset-0 bg-gradient-to-br from-pink-50 via-white to-purple-50" />
 
-        {/* LADO ESQUERDO */}
-        <div>
+      {/* CONTEÚDO */}
+      <div className="relative max-w-7xl mx-auto px-6 py-32">
 
-          <span className="inline-block text-xs font-medium bg-pink-50 text-pink-600 px-3 py-1 rounded-full mb-6">
-            Programa Líder Hero
-          </span>
+        <div className="grid md:grid-cols-2 gap-16 items-center">
 
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
-            Plataforma de
-            <span className="text-pink-600"> liderança Hero</span>
-          </h1>
+          {/* LADO ESQUERDO */}
+          <div>
 
-          <p className="text-gray-600 text-lg mb-8 max-w-xl">
-            Execute processos de gestão com clareza, consistência e impacto real.
-            Um playbook completo para líderes.
-          </p>
+            <span className="inline-block text-xs font-medium bg-pink-100 text-pink-600 px-3 py-1 rounded-full mb-6">
+              ✨ Programa Líder Hero
+            </span>
 
-          <div className="flex gap-4">
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+              Plataforma de
+              <span className="text-pink-600"> liderança prática</span>
+            </h1>
 
-            <a
-              href="/jornada"
-              className="bg-black text-white px-6 py-3 rounded-xl text-sm font-medium hover:bg-gray-800 transition"
-            >
-              Explorar jornadas →
-            </a>
+            <p className="text-gray-600 text-lg mb-8 max-w-xl">
+              Execute processos de gestão com clareza, consistência e impacto real.
+              Um playbook completo para líderes.
+            </p>
 
-            <a
-              href="/wiki"
-              className="border border-gray-300 px-6 py-3 rounded-xl text-sm font-medium hover:bg-gray-100 transition"
-            >
-              Acessar Wiki
-            </a>
+            {/* BOTÕES */}
+            <div className="flex gap-4">
+
+              <a
+                href="/jornada"
+                className="bg-black text-white px-6 py-3 rounded-xl text-sm font-medium shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all"
+              >
+                Explorar jornadas →
+              </a>
+
+              <a
+                href="/wiki"
+                className="bg-white border border-gray-200 px-6 py-3 rounded-xl text-sm font-medium shadow-md hover:shadow-lg hover:scale-[1.02] transition-all"
+              >
+                Acessar Wiki
+              </a>
+
+            </div>
 
           </div>
 
-        </div>
+          {/* LADO DIREITO (LOGIN CARD) */}
+          <div className="hidden md:block">
 
-        {/* LADO DIREITO */}
-        <div className="hidden md:block">
+            <div className="bg-white/80 backdrop-blur border border-gray-200 rounded-3xl p-8 shadow-xl">
 
-          <div className="bg-gradient-to-br from-pink-50 to-purple-50 border border-gray-200 rounded-3xl p-8">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Acesse sua jornada
+              </h3>
 
-            <div className="space-y-6">
+              <p className="text-sm text-gray-500 mb-6">
+                Entre com sua conta para acompanhar seu progresso
+              </p>
 
-              <div>
-                <p className="text-sm text-gray-500 mb-2">
-                  O que você vai encontrar
-                </p>
-
-                <h3 className="font-semibold text-lg text-gray-900">
-                  Jornada completa do líder
-                </h3>
-              </div>
-
-              <div className="space-y-4">
-
-                <div className="flex items-start gap-3">
-                  <span>🎯</span>
-                  <p className="text-sm text-gray-600">
-                    Playbooks operacionais práticos
-                  </p>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <span>⚙️</span>
-                  <p className="text-sm text-gray-600">
-                    Execução passo a passo
-                  </p>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <span>📈</span>
-                  <p className="text-sm text-gray-600">
-                    Desenvolvimento contínuo de liderança
-                  </p>
-                </div>
-
-              </div>
+              <button
+                className="w-full flex items-center justify-center gap-3 bg-white border border-gray-300 px-5 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all"
+              >
+                <span>🔐</span>
+                Entrar com Google
+              </button>
 
             </div>
 
