@@ -51,7 +51,7 @@ export default function PlanejamentoPage() {
             Para isso, antes de abrir a vaga na Gupy, utilize a IA de People para:
           </p>
 
-          <ul className="list-disc ml-6 space-y-1">
+          <ul className="list-disc ml-6 space-y-1 mb-4">
 
             <li>Trazer clareza sobre o objetivo da função</li>
 
@@ -61,20 +61,13 @@ export default function PlanejamentoPage() {
 
           </ul>
 
-        </div>
+          {/* IMPORTANTE DENTRO DO OBJETIVO */}
 
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-sm">
 
-        {/* IMPORTANTE */}
+            <strong>⚠️ Importante:</strong> Essa etapa acontece sempre que houver necessidade de contratação (expansão, substituição ou criação de nova função).
 
-        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl mb-8">
-
-          <h3 className="font-semibold mb-2">
-            ⚠️ Importante
-          </h3>
-
-          <p>
-            Essa etapa acontece sempre que houver necessidade de contratação (expansão, substituição ou criação de nova função).
-          </p>
+          </div>
 
         </div>
 
@@ -87,24 +80,20 @@ export default function PlanejamentoPage() {
             👤 Papel do líder
           </h3>
 
-          <p className="mb-3">
-            O líder é o principal responsável pela definição da vaga. Cabe a ele garantir:
-          </p>
-
           <ul className="list-disc ml-6 space-y-2">
 
             <li>Clareza sobre o contexto da vaga e o momento do time</li>
 
             <li>Definição objetiva do escopo e do impacto esperado da contratação</li>
 
-            <li>Qualidade e estrutura das informações antes da abertura na Gupy</li>
+            <li>Garantir qualidade e estrutura das informações antes da abertura na Gupy</li>
 
           </ul>
 
         </div>
 
 
-        {/* PROCESSO */}
+        {/* COMO EXECUTAR */}
 
         <div className="bg-gray-50 border border-gray-200 p-6 rounded-xl mb-8">
 
@@ -128,45 +117,46 @@ export default function PlanejamentoPage() {
             Ao final da conversa, você receberá um relatório estruturado da vaga.
           </p>
 
-          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-sm">
+          {/* IMPORTANTE */}
+
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-sm mb-6">
 
             <strong>⚠️ Importante:</strong> Esse relatório deve ser anexado na seção{" "}
             <strong>“Dados Internos – Justificativa”</strong> da Gupy ao abrir a requisição.
 
           </div>
 
-        </div>
+          {/* INFORMAÇÕES DO RELATÓRIO */}
 
+          <div className="bg-green-50 border border-green-200 rounded-lg p-4">
 
-        {/* RELATÓRIO GERADO */}
+            <h4 className="font-medium mb-3">
+              📄 Informações geradas pelo relatório
+            </h4>
 
-        <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-xl mb-8">
+            <ul className="list-disc ml-6 space-y-1 text-sm">
 
-          <h3 className="font-semibold mb-4">
-            📄 Informações geradas pelo relatório
-          </h3>
+              <li>Contexto da vaga</li>
 
-          <ul className="list-disc ml-6 space-y-1">
+              <li>Problema identificado</li>
 
-            <li>Contexto da vaga</li>
+              <li>Impacto de não abrir a vaga</li>
 
-            <li>Problema identificado</li>
+              <li>Objetivo da nova contratação</li>
 
-            <li>Impacto de não abrir a vaga</li>
+              <li>Alternativas já avaliadas</li>
 
-            <li>Objetivo da nova contratação</li>
+              <li>Perfil e escopo desejado (prévia)</li>
 
-            <li>Alternativas já avaliadas</li>
+              <li>Expectativas para os primeiros 30/60 dias</li>
 
-            <li>Perfil e escopo desejado (prévia)</li>
+              <li>Métrica de sucesso</li>
 
-            <li>Expectativas para os primeiros 30/60 dias</li>
+              <li>Síntese automática do caso</li>
 
-            <li>Métrica de sucesso</li>
+            </ul>
 
-            <li>Síntese automática do caso</li>
-
-          </ul>
+          </div>
 
         </div>
 
