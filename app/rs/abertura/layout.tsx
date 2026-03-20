@@ -7,7 +7,7 @@ export default function AlinhamentoLayout({
 }) {
   return (
     <LessonLayout
-      title="Alinhamento com People"
+      title="Abertura e Alinhamento com People"
       backLink="/rs"
       sectionTitle="R&S"
       lessons={[
