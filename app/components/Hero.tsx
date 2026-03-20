@@ -13,7 +13,7 @@ export default function Hero() {
 
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
             Plataforma de
-            <span className="text-pink-600"> liderança prática</span>
+            <span className="text-pink-600"> liderança Hero</span>
           </h1>
 
           <p className="text-gray-600 text-lg mb-8 max-w-xl">
