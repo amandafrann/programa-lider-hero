@@ -1,27 +1,27 @@
 export default function Hero() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-20">
+    <section className="max-w-7xl mx-auto px-6 py-28">
 
-      <div className="grid md:grid-cols-2 gap-12 items-center bg-white border border-gray-200 rounded-3xl p-10 shadow-sm">
+      <div className="grid md:grid-cols-2 gap-16 items-center">
 
         {/* LADO ESQUERDO */}
         <div>
 
-          <span className="inline-block text-xs font-medium bg-pink-50 text-pink-600 px-3 py-1 rounded-full mb-4">
+          <span className="inline-block text-xs font-medium bg-pink-50 text-pink-600 px-3 py-1 rounded-full mb-6">
             Programa Líder Hero
           </span>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-            Programa{" "}
-            <span className="text-pink-600">Líder Hero</span>
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+            Plataforma de
+            <span className="text-pink-600"> liderança prática</span>
           </h1>
 
-          <p className="text-gray-600 mb-6 max-w-lg">
-            A plataforma prática para líderes executarem processos com clareza,
-            consistência e impacto real em negócios e cultura.
+          <p className="text-gray-600 text-lg mb-8 max-w-xl">
+            Execute processos de gestão com clareza, consistência e impacto real.
+            Um playbook completo para líderes.
           </p>
 
-          <div className="flex gap-3">
+          <div className="flex gap-4">
 
             <a
               href="/jornada"
@@ -42,37 +42,47 @@ export default function Hero() {
         </div>
 
         {/* LADO DIREITO */}
-        <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-inner">
+        <div className="hidden md:block">
 
-          <div className="mb-4">
-            <h3 className="font-semibold text-gray-800 mb-1">
-              Jornada do Líder
-            </h3>
-            <p className="text-sm text-gray-500">
-              Execução prática dos principais processos
-            </p>
-          </div>
+          <div className="bg-gradient-to-br from-pink-50 to-purple-50 border border-gray-200 rounded-3xl p-8">
 
-          <div className="space-y-4">
+            <div className="space-y-6">
 
-            <div>
-              <div className="flex justify-between text-xs text-gray-500 mb-1">
-                <span>R&S</span>
-                <span>60%</span>
-              </div>
-              <div className="w-full bg-gray-100 h-2 rounded-full">
-                <div className="bg-pink-500 h-2 rounded-full w-[60%]" />
-              </div>
-            </div>
+              <div>
+                <p className="text-sm text-gray-500 mb-2">
+                  O que você vai encontrar
+                </p>
 
-            <div>
-              <div className="flex justify-between text-xs text-gray-500 mb-1">
-                <span>Desenvolvimento</span>
-                <span>40%</span>
+                <h3 className="font-semibold text-lg text-gray-900">
+                  Jornada completa do líder
+                </h3>
               </div>
-              <div className="w-full bg-gray-100 h-2 rounded-full">
-                <div className="bg-purple-500 h-2 rounded-full w-[40%]" />
+
+              <div className="space-y-4">
+
+                <div className="flex items-start gap-3">
+                  <span>🎯</span>
+                  <p className="text-sm text-gray-600">
+                    Playbooks operacionais práticos
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <span>⚙️</span>
+                  <p className="text-sm text-gray-600">
+                    Execução passo a passo
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <span>📈</span>
+                  <p className="text-sm text-gray-600">
+                    Desenvolvimento contínuo de liderança
+                  </p>
+                </div>
+
               </div>
+
             </div>
 
           </div>
