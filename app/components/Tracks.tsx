@@ -1,16 +1,18 @@
 export default function Tracks() {
   return (
-    <section className="max-w-7xl mx-auto px-6 pb-32">
+    <section className="max-w-7xl mx-auto px-6 py-40">
 
       {/* HEADER */}
-      <div className="text-center mb-16">
-        <h2 className="text-3xl font-bold text-gray-900 mb-3">
+      <div className="text-center mb-20">
+
+        <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
           Trilhas de conhecimento
         </h2>
 
-        <p className="text-gray-600">
-          Selecione sua área de atuação para iniciar a jornada
+        <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+          Selecione sua área de atuação para iniciar a jornada de aprendizado
         </p>
+
       </div>
 
       {/* CARDS */}
@@ -27,11 +29,11 @@ export default function Tracks() {
             </div>
           </div>
 
-          <h3 className="text-lg font-semibold mb-2 text-gray-900">
+          <h3 className="text-xl font-semibold mb-2 text-gray-900">
             Recrutamento & Seleção
           </h3>
 
-          <p className="text-sm text-gray-600 mb-6">
+          <p className="text-sm text-gray-600 mb-6 leading-relaxed">
             Estruture processos seletivos com qualidade e consistência
           </p>
 
@@ -49,11 +51,11 @@ export default function Tracks() {
             </div>
           </div>
 
-          <h3 className="text-lg font-semibold mb-2 text-gray-700">
+          <h3 className="text-xl font-semibold mb-2 text-gray-700">
             Desenvolvimento
           </h3>
 
-          <p className="text-sm text-gray-500 mb-6">
+          <p className="text-sm text-gray-500 mb-6 leading-relaxed">
             Evolução contínua do time e liderança
           </p>
 
@@ -71,11 +73,11 @@ export default function Tracks() {
             </div>
           </div>
 
-          <h3 className="text-lg font-semibold mb-2 text-gray-700">
+          <h3 className="text-xl font-semibold mb-2 text-gray-700">
             Performance & Gestão
           </h3>
 
-          <p className="text-sm text-gray-500 mb-6">
+          <p className="text-sm text-gray-500 mb-6 leading-relaxed">
             Gestão de metas, performance e resultados
           </p>
 
