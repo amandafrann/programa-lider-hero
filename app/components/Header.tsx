@@ -1,9 +1,11 @@
 "use client"
 
 import { signOut, useSession } from "next-auth/react"
+import { useState } from "react"
 
 export default function Header() {
   const { data: session } = useSession()
+  const [open, setOpen] = useState(false)
 
   return (
     <header className="w-full border-b bg-white/80 backdrop-blur sticky top-0 z-50">
@@ -16,18 +18,39 @@ export default function Header() {
 
         {/* USER */}
         {session && (
-          <div className="flex items-center gap-4">
+          <div className="relative">
 
-            <div className="text-sm text-gray-600">
-              {session.user?.name}
-            </div>
-
+            {/* BOTÃO (avatar + nome) */}
             <button
-              onClick={() => signOut({ callbackUrl: "/" })}
-              className="text-sm bg-gray-100 hover:bg-gray-200 px-3 py-1 rounded-lg transition cursor-pointer"
+              onClick={() => setOpen(!open)}
+              className="flex items-center gap-3 hover:bg-gray-100 px-3 py-2 rounded-xl transition cursor-pointer"
             >
-              Sair
+              {/* FOTO */}
+              <img
+                src={session.user?.image || ""}
+                alt="user"
+                className="w-8 h-8 rounded-full"
+              />
+
+              {/* NOME */}
+              <span className="text-sm font-medium text-gray-700">
+                {session.user?.name}
+              </span>
             </button>
+
+            {/* DROPDOWN */}
+            {open && (
+              <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-lg p-2">
+
+                <button
+                  onClick={() => signOut({ callbackUrl: "/" })}
+                  className="w-full text-left px-3 py-2 text-sm rounded-lg hover:bg-gray-100 transition"
+                >
+                  Sair
+                </button>
+
+              </div>
+            )}
 
           </div>
         )}
