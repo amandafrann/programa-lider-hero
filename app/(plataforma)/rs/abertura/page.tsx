@@ -1,8 +1,24 @@
+import Link from "next/link";
+
 export default function AberturaPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-gray-100 py-20 flex justify-center">
 
       <div className="max-w-5xl w-full px-6">
+
+        {/* VOLTAR (PADRÃO PREMIUM) */}
+        <Link
+          href="/rs"
+          className="group inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-semibold text-gray-600 hover:text-pink-600 hover:bg-pink-50 transition-all duration-200 mb-10"
+        >
+          <span className="transition-transform duration-200 group-hover:-translate-x-1">
+            ←
+          </span>
+
+          <span className="tracking-tight">
+            Voltar pra R&S
+          </span>
+        </Link>
 
         {/* INTRO */}
         <p className="text-gray-700 text-lg mb-12 max-w-2xl">
