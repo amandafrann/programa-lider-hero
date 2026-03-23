@@ -66,7 +66,7 @@ export default function Hero() {
               </p>
 
               <button
-                onClick={() => signIn("google")}
+                onClick={() => signIn("google", { callbackUrl: "/jornada" })}
                 className="w-full flex items-center justify-center gap-3 bg-white border border-gray-300 px-5 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all"
               >
                 <span>🔐</span>
