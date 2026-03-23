@@ -22,7 +22,7 @@ export default function PlanejamentoPage() {
           </h1>
 
           <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mb-6">
-            Antes de abrir a vaga na Gupy, utilizamos a IA de People para organizar o contexto da posição e avaliar a real necessidade dessa nova contratação.
+            Antes de abrir a vaga na Gupy, todo líder deve utilizar a IA de People para organizar o contexto da posição e avaliar a real necessidade dessa nova contratação.
           </p>
 
           {/* TEMPO */}
@@ -32,37 +32,20 @@ export default function PlanejamentoPage() {
 
         </div>
 
-        {/* BLOCO HERO (rosa) */}
-        <div className="border border-pink-200 bg-pink-50 rounded-2xl p-6 mb-12">
-
-          <div className="text-sm font-semibold text-pink-600 mb-2">
-            ⚡ Contexto da etapa
-          </div>
-
-          <p className="text-gray-700 leading-relaxed">
-            Antes de abrir a vaga na Gupy, utilizamos a IA de People para organizar o contexto da posição e avaliar a real necessidade dessa nova contratação.
-          </p>
-
-        </div>
-
         {/* ===================== */}
-        {/* OBJETIVO */}
+        {/* OBJETIVO (PRINCIPAL) */}
         {/* ===================== */}
 
         <section className="mb-12">
 
           <h2 className="text-xl font-semibold text-gray-900 mb-4">
-            ⚡ Objetivo da etapa
+            ⚡ Objetivo
           </h2>
 
           <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
 
             <p className="mb-4 text-gray-700">
-              Garantir que a abertura de uma nova vaga seja feita de forma estruturada e estratégica.
-            </p>
-
-            <p className="mb-3 text-gray-600">
-              Para isso, antes de abrir a vaga na Gupy, utilize a IA de People para:
+              Antes de abrir a vaga na Gupy, todo líder deve utilizar a IA de People para organizar o contexto da posição e avaliar a real necessidade dessa nova contratação. Isso irá:
             </p>
 
             <ul className="list-disc ml-6 space-y-2 text-gray-700 mb-6">
@@ -94,8 +77,8 @@ export default function PlanejamentoPage() {
           <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
 
             <ul className="list-disc ml-6 space-y-3 text-gray-700">
-              <li>Clareza sobre o contexto da vaga e o momento do time</li>
-              <li>Definição objetiva do escopo e do impacto esperado da contratação</li>
+              <li>Oferecer clareza sobre o contexto da vaga e o momento do time</li>
+              <li>Definição objetiva do escopo e do impacto esperado dessa contratação</li>
               <li>Garantir qualidade e estrutura das informações antes da abertura na Gupy</li>
             </ul>
 
@@ -134,6 +117,7 @@ export default function PlanejamentoPage() {
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+
               <h4 className="font-medium mb-3">
                 📄 Informações geradas pelo relatório:
               </h4>
@@ -149,6 +133,7 @@ export default function PlanejamentoPage() {
                 <li>Métrica de sucesso</li>
                 <li>Síntese automática do caso</li>
               </ul>
+
             </div>
 
           </div>
@@ -170,9 +155,7 @@ export default function PlanejamentoPage() {
           <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
 
             <ul className="list-disc ml-6 space-y-3 text-gray-700">
-              <li>
-                Garantir contexto claro, escopo bem definido e alinhamento entre liderança e People
-              </li>
+              <li>Garantir contexto claro, escopo bem definido e alinhamento entre liderança e People</li>
               <li>100% das vagas abertas corretamente via Gupy</li>
               <li>Redução de retrabalho (rebriefing) e/ou recusas por falta de informação</li>
             </ul>
