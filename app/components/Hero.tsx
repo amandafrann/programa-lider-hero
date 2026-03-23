@@ -46,10 +46,10 @@ export default function Hero() {
                     Entre com sua conta para acompanhar seu progresso
                   </p>
 
-                  {/* BOTÃO GOOGLE MELHORADO */}
+                  {/* BOTÃO GOOGLE PROFISSIONAL */}
                   <button
                     onClick={() => signIn("google", { callbackUrl: "/jornada" })}
-                    className="w-full flex items-center justify-center gap-3 bg-white border border-gray-300 px-5 py-3 rounded-xl shadow-sm hover:shadow-md hover:bg-gray-50 transition-all"
+                    className="w-full flex items-center justify-center gap-3 bg-white border border-gray-300 px-5 py-3 rounded-xl shadow-sm hover:shadow-md hover:bg-gray-50 transition-all cursor-pointer hover:scale-[1.01] active:scale-[0.99]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ export default function Hero() {
 
                   <button
                     onClick={() => signOut({ callbackUrl: "/" })}
-                    className="w-full bg-black text-white px-5 py-3 rounded-xl shadow-md hover:shadow-lg transition"
+                    className="w-full bg-black text-white px-5 py-3 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer hover:scale-[1.01] active:scale-[0.99]"
                   >
                     Sair
                   </button>
