@@ -1,15 +1,30 @@
 "use client"
 
 import { signOut, useSession } from "next-auth/react"
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 
 export default function Header() {
   const { data: session } = useSession()
   const [open, setOpen] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+
+  // fechar ao clicar fora
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (ref.current && !ref.current.contains(event.target as Node)) {
+        setOpen(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [])
 
   return (
-    <header className="w-full border-b bg-white/80 backdrop-blur sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="w-full bg-white/70 backdrop-blur border-b border-gray-100 sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
         {/* LOGO */}
         <div className="font-semibold text-gray-900">
@@ -18,29 +33,31 @@ export default function Header() {
 
         {/* USER */}
         {session && (
-          <div className="relative">
+          <div className="relative" ref={ref}>
 
-            {/* BOTÃO (avatar + nome) */}
+            {/* BOTÃO */}
             <button
               onClick={() => setOpen(!open)}
-              className="flex items-center gap-3 hover:bg-gray-100 px-3 py-2 rounded-xl transition cursor-pointer"
+              className="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-gray-100 transition"
             >
-              {/* FOTO */}
               <img
                 src={session.user?.image || ""}
                 alt="user"
-                className="w-8 h-8 rounded-full"
+                className="w-9 h-9 rounded-full border border-gray-200 shadow-sm"
               />
 
-              {/* NOME */}
-              <span className="text-sm font-medium text-gray-700">
+              <span className="text-sm font-medium text-gray-700 hidden sm:block">
                 {session.user?.name}
               </span>
             </button>
 
             {/* DROPDOWN */}
             {open && (
-              <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-lg p-2">
+              <div className="absolute right-0 mt-2 w-56 bg-white border border-gray-200 rounded-2xl shadow-lg p-2 animate-in fade-in zoom-in-95 duration-100">
+
+                <div className="px-3 py-2 border-b text-sm text-gray-600">
+                  {session.user?.email}
+                </div>
 
                 <button
                   onClick={() => signOut({ callbackUrl: "/" })}
