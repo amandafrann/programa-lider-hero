@@ -1,3 +1,7 @@
+"use client"
+
+import { signIn } from "next-auth/react"
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
@@ -62,6 +66,7 @@ export default function Hero() {
               </p>
 
               <button
+                onClick={() => signIn("google")}
                 className="w-full flex items-center justify-center gap-3 bg-white border border-gray-300 px-5 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all"
               >
                 <span>🔐</span>
@@ -77,5 +82,5 @@ export default function Hero() {
       </div>
 
     </section>
-  );
+  )
 }
