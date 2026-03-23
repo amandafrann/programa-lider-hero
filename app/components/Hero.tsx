@@ -31,7 +31,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-gray-600 text-lg mb-8 max-w-xl leading-relaxed">
-              Execute processos de gestão com clareza, consistência e impacto real.
+              Execute processos de gestão com clareza e impacto real.
             </p>
 
             <div className="flex gap-4">
@@ -39,7 +39,7 @@ export default function Hero() {
                 href="/jornada"
                 className="bg-black text-white px-6 py-3 rounded-xl text-sm font-medium shadow-md hover:shadow-lg transition hover:scale-[1.02]"
               >
-                Explorar trilhas →
+                Explorar Jornada →
               </a>
 
               <a
@@ -58,11 +58,11 @@ export default function Hero() {
               {!session ? (
                 <>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Acesse sua jornada
+                    Acesse
                   </h3>
 
                   <p className="text-sm text-gray-500 mb-6">
-                    Entre com sua conta para acompanhar seu progresso
+                    Entre com sua conta para acessar o conteúdo
                   </p>
 
                   <button
