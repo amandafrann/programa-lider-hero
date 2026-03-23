@@ -1,10 +1,10 @@
 export default function Tracks() {
   return (
-    <section className="max-w-7xl mx-auto px-6 pb-24 -mt-10">
+    <section className="max-w-7xl mx-auto px-6 pb-24 mt-10 md:mt-16">
 
       {/* HEADER */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-3">
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-3">
           Trilhas de conhecimento
         </h2>
 
@@ -83,7 +83,6 @@ export default function Tracks() {
         </div>
 
       </div>
-
     </section>
   )
 }
