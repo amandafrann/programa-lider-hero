@@ -20,12 +20,18 @@ export default function AberturaLayout({
 
         <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm sticky top-24">
 
-          {/* VOLTAR */}
+          {/* VOLTAR (PADRÃO PREMIUM) */}
           <Link
             href="/rs"
-            className="text-sm text-gray-500 hover:text-gray-900"
+            className="group inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-semibold text-gray-600 hover:text-pink-600 hover:bg-pink-50 transition-all duration-200"
           >
-            ← Voltar para jornada
+            <span className="transition-transform duration-200 group-hover:-translate-x-1">
+              ←
+            </span>
+
+            <span className="tracking-tight">
+              Voltar pra R&S
+            </span>
           </Link>
 
           {/* TÍTULO */}
