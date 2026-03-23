@@ -22,7 +22,7 @@ export default function PlanejamentoPage() {
           </h1>
 
           <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mb-6">
-            Antes de abrir a vaga na Gupy, todo líder deve utilizar a IA de People para organizar o contexto da posição e avaliar a real necessidade dessa nova contratação.
+            Aprenda a utilizar a IA de People para planejar uma nova vaga.
           </p>
 
           {/* TEMPO */}
