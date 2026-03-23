@@ -6,12 +6,18 @@ export default function PlanejamentoPage() {
 
       <div className="max-w-4xl w-full px-8">
 
-        {/* VOLTAR */}
+        {/* VOLTAR (PADRÃO PREMIUM) */}
         <Link
           href="/rs"
-          className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 mb-10 transition"
+          className="group inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-semibold text-gray-600 hover:text-pink-600 hover:bg-pink-50 transition-all duration-200 mb-10"
         >
-          ← Voltar para R&S
+          <span className="transition-transform duration-200 group-hover:-translate-x-1">
+            ←
+          </span>
+
+          <span className="tracking-tight">
+            Voltar para R&S
+          </span>
         </Link>
 
         {/* HEADER */}
@@ -25,7 +31,6 @@ export default function PlanejamentoPage() {
             Aprenda a utilizar a IA de People para planejar uma nova vaga.
           </p>
 
-          {/* TEMPO */}
           <div className="inline-flex items-center gap-2 text-sm bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
             ⏱ 3 min de leitura
           </div>
