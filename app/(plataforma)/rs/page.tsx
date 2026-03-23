@@ -53,7 +53,7 @@ export default function RSPage() {
             </div>
 
             <h3 className="text-xl font-semibold mb-2">
-              Planejamento da vaga
+              1. Planejamento da vaga
             </h3>
 
             <p className="text-gray-600 text-sm mb-6">
@@ -79,7 +79,7 @@ export default function RSPage() {
             </div>
 
             <h3 className="text-xl font-semibold mb-2">
-              Abertura e alinhamento
+              2. Abertura e alinhamento
             </h3>
 
             <p className="text-gray-600 text-sm mb-6">
@@ -105,7 +105,7 @@ export default function RSPage() {
             </div>
 
             <h3 className="text-xl font-semibold mb-2">
-              Condução do processo
+              3. Condução do processo
             </h3>
 
             <p className="text-gray-600 text-sm mb-6">
@@ -131,7 +131,7 @@ export default function RSPage() {
             </div>
 
             <h3 className="text-xl font-semibold mb-2">
-              Decisão e fechamento
+              4. Decisão e fechamento
             </h3>
 
             <p className="text-gray-600 text-sm mb-6">
