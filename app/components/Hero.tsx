@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-pink-50 via-white to-purple-50" />
 
       {/* CONTEÚDO */}
-      <div className="relative max-w-7xl mx-auto px-6 pt-20 pb-16 md:pt-24 md:pb-20">
+      <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-28 md:pt-28 md:pb-32">
 
         <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
 
@@ -22,11 +22,11 @@ export default function Hero() {
               ✨ Programa Líder Hero
             </span>
 
-            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight mb-6">
-              Plataforma de
+            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 leading-tight mb-6">
+              Plataforma
               <br />
-              <span className="text-pink-600 block">
-                liderança prática
+              <span className="text-pink-600">
+                Líder Hero
               </span>
             </h1>
 
