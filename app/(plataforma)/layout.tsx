@@ -1,4 +1,4 @@
-import Header from "../components/Header" // ✅ CAMINHO CORRETO
+import Header from "../components/Header"
 
 export default function PlataformaLayout({
   children,
@@ -6,9 +6,9 @@ export default function PlataformaLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="min-h-screen bg-[#f7f7f8]">
+    <div className="min-h-screen bg-[#f6f7fb]">
 
-      {/* HEADER GLOBAL */}
+      {/* HEADER */}
       <Header />
 
       <div className="flex">
@@ -25,10 +25,14 @@ export default function PlataformaLayout({
           <div className="mb-8">
             <p className="text-xs text-gray-400 mb-1">Trilha</p>
 
-            <h2 className="text-lg font-semibold text-gray-900">
+            <h2 className="text-lg font-semibold text-gray-900 leading-tight">
               Cobrança &{" "}
               <span className="text-pink-500">Negociação</span>
             </h2>
+
+            <p className="text-xs text-gray-400 mt-1">
+              Trilha Avançada • Financeiro
+            </p>
           </div>
 
           {/* PROGRESSO */}
@@ -44,47 +48,72 @@ export default function PlataformaLayout({
           </div>
 
           {/* MENU */}
-          <nav className="space-y-2 text-sm">
+          <nav className="space-y-4 text-sm">
 
             {/* FUNDAMENTOS */}
-            <div className="text-xs text-gray-400 mt-6 mb-2">
-              FUNDAMENTOS
-            </div>
+            <div>
+              <div className="text-xs text-gray-400 mb-2">FUNDAMENTOS</div>
 
-            <div className="bg-white border border-gray-200 p-3 rounded-xl font-medium shadow-sm relative">
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-pink-500 rounded-l-xl"></div>
-              O Ecossistema Hero
+              <div className="bg-white border border-gray-200 p-4 rounded-xl shadow-sm relative">
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-pink-500 rounded-l-xl"></div>
+
+                <div className="flex justify-between items-center">
+                  <span className="font-medium text-gray-900">
+                    Identidade e Tom de Voz
+                  </span>
+
+                  <span className="text-green-500 text-xs">✔</span>
+                </div>
+
+                <p className="text-xs text-gray-400 mt-1">30 min</p>
+              </div>
+
+              <div className="mt-2 p-3 rounded-xl text-gray-600">
+                O Ecossistema Hero
+              </div>
             </div>
 
             {/* OPERACIONAL */}
-            <div className="text-xs text-gray-400 mt-6 mb-2">
-              OPERACIONAL
-            </div>
+            <div>
+              <div className="text-xs text-gray-400 mb-2">OPERACIONAL</div>
 
-            <div className="p-3 rounded-xl hover:bg-gray-100 cursor-pointer transition">
-              Rotinas Financeiras
-            </div>
+              <div className="p-3 rounded-xl hover:bg-gray-100 cursor-pointer transition">
+                Rotinas Financeiras
+              </div>
 
-            <div className="p-3 rounded-xl hover:bg-gray-100 cursor-pointer transition">
-              Inadimplência e Serasa
+              <div className="p-3 rounded-xl hover:bg-gray-100 cursor-pointer transition">
+                Inadimplência e Serasa
+              </div>
             </div>
 
             {/* GESTÃO */}
-            <div className="text-xs text-gray-400 mt-6 mb-2">
-              GESTÃO
-            </div>
+            <div>
+              <div className="text-xs text-gray-400 mb-2">GESTÃO</div>
 
-            <div className="p-3 rounded-xl hover:bg-gray-100 cursor-pointer transition">
-              Mapeamento Operacional Estratégico
+              <div className="p-3 rounded-xl hover:bg-gray-100 cursor-pointer transition">
+                Mapeamento Operacional Estratégico
+              </div>
             </div>
 
           </nav>
 
         </aside>
 
-        {/* CONTEÚDO */}
-        <main className="flex-1 bg-gradient-to-b from-white via-gray-50 to-gray-100 px-12 py-12">
-          {children}
+        {/* ÁREA PRINCIPAL */}
+        <main className="flex-1 px-10 py-10">
+
+          {/* CONTAINER CENTRAL (SEGREDO DO DESIGN) */}
+          <div className="max-w-5xl mx-auto">
+
+            {/* CARD PRINCIPAL */}
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-10">
+
+              {children}
+
+            </div>
+
+          </div>
+
         </main>
 
       </div>
