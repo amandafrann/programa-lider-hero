@@ -5,7 +5,7 @@ export default function AberturaPage() {
       <div className="max-w-5xl w-full px-6">
 
         {/* INTRO */}
-        <p className="text-gray-600 text-lg mb-12 max-w-2xl">
+        <p className="text-gray-700 text-lg mb-12 max-w-2xl">
           Após utilizar a IA de People para estruturar a vaga, é hora de fazer a abertura da requisição na Gupy.
         </p>
 
@@ -14,7 +14,7 @@ export default function AberturaPage() {
 
           {/* PASSO 1 */}
           <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg mb-4">
+            <h3 className="font-semibold text-lg text-gray-900 mb-4">
               1. Acessar a Gupy
             </h3>
 
@@ -39,7 +39,7 @@ export default function AberturaPage() {
 
           {/* PASSO 2 */}
           <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg mb-4">
+            <h3 className="font-semibold text-lg text-gray-900 mb-4">
               2. Selecionar o template da vaga
             </h3>
 
@@ -58,7 +58,7 @@ export default function AberturaPage() {
 
           {/* PASSO 3 */}
           <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg mb-4">
+            <h3 className="font-semibold text-lg text-gray-900 mb-4">
               3. Descrição da vaga
             </h3>
 
@@ -70,7 +70,7 @@ export default function AberturaPage() {
               Os demais textos já estão padronizados pelo template.
             </p>
 
-            <p className="font-medium mb-2">
+            <p className="font-medium text-gray-900 mb-2">
               Edite o campo <strong>"Sobre o desafio"</strong>:
             </p>
 
@@ -79,12 +79,12 @@ export default function AberturaPage() {
               <li>Qual impacto terá no time ou na empresa</li>
             </ul>
 
-            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm mb-6">
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-gray-800 mb-6">
               ⚠️ Essa parte é o que torna a vaga mais atrativa — capriche.
             </div>
 
             <details className="bg-gray-50 border border-gray-200 rounded-xl p-4 cursor-pointer">
-              <summary className="font-medium">
+              <summary className="font-medium text-gray-900">
                 📄 Ver template de referência
               </summary>
 
@@ -94,25 +94,25 @@ export default function AberturaPage() {
                   Ter um currículo compatível é importante, mas na <strong>Hero</strong> acreditamos que escolher um novo integrante vai além disso...
                 </p>
 
-                <blockquote className="border-l-4 border-gray-300 pl-4 italic">
+                <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-700">
                   Somos um time que aprende rápido...
                 </blockquote>
 
-                <blockquote className="border-l-4 border-gray-300 pl-4 italic">
+                <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-700">
                   Estamos em um momento único...
                 </blockquote>
 
               </div>
             </details>
 
-            <p className="mt-4">
+            <p className="mt-4 text-gray-700">
               Clique em <strong>Atualizar e continuar</strong>.
             </p>
           </div>
 
           {/* PASSO 4 */}
           <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg mb-4">
+            <h3 className="font-semibold text-lg text-gray-900 mb-4">
               4. Local / Modelo de trabalho
             </h3>
 
@@ -131,7 +131,7 @@ export default function AberturaPage() {
 
           {/* PASSO 5 */}
           <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg mb-4">
+            <h3 className="font-semibold text-lg text-gray-900 mb-4">
               5. Dados internos
             </h3>
 
@@ -144,11 +144,11 @@ export default function AberturaPage() {
               <li>Justificativa</li>
             </ul>
 
-            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm mt-6">
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-gray-800 mt-6">
               ⚠️ Inclua o relatório gerado pela IA de People.
             </div>
 
-            <p className="mt-4">
+            <p className="mt-4 text-gray-700">
               Clique em <strong>Atualizar e continuar</strong>.
             </p>
 
@@ -160,7 +160,7 @@ export default function AberturaPage() {
 
           {/* PASSO 6 */}
           <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg mb-4">
+            <h3 className="font-semibold text-lg text-gray-900 mb-4">
               6. Aprovação da vaga
             </h3>
 
@@ -177,7 +177,7 @@ export default function AberturaPage() {
 
           {/* PASSO 7 */}
           <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg mb-4">
+            <h3 className="font-semibold text-lg text-gray-900 mb-4">
               7. Vaga em aprovação
             </h3>
 
