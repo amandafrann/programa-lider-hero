@@ -1,18 +1,16 @@
 export default function Tracks() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-40">
+    <section className="max-w-7xl mx-auto px-6 pb-24 -mt-10">
 
       {/* HEADER */}
-      <div className="text-center mb-20">
-
-        <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-3">
           Trilhas de conhecimento
         </h2>
 
-        <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-600 text-lg">
           Selecione sua área de atuação para iniciar a jornada de aprendizado
         </p>
-
       </div>
 
       {/* CARDS */}
@@ -29,11 +27,11 @@ export default function Tracks() {
             </div>
           </div>
 
-          <h3 className="text-xl font-semibold mb-2 text-gray-900">
+          <h3 className="text-lg font-semibold mb-2 text-gray-900">
             Recrutamento & Seleção
           </h3>
 
-          <p className="text-sm text-gray-600 mb-6 leading-relaxed">
+          <p className="text-sm text-gray-600 mb-6">
             Estruture processos seletivos com qualidade e consistência
           </p>
 
@@ -44,18 +42,17 @@ export default function Tracks() {
 
         {/* CARD BLOQUEADO */}
         <div className="bg-white border border-gray-200 rounded-3xl p-8 opacity-60">
-
           <div className="mb-6">
             <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 text-gray-400 text-xl">
               🔄
             </div>
           </div>
 
-          <h3 className="text-xl font-semibold mb-2 text-gray-700">
+          <h3 className="text-lg font-semibold mb-2 text-gray-700">
             Desenvolvimento
           </h3>
 
-          <p className="text-sm text-gray-500 mb-6 leading-relaxed">
+          <p className="text-sm text-gray-500 mb-6">
             Evolução contínua do time e liderança
           </p>
 
@@ -66,18 +63,17 @@ export default function Tracks() {
 
         {/* CARD BLOQUEADO */}
         <div className="bg-white border border-gray-200 rounded-3xl p-8 opacity-60">
-
           <div className="mb-6">
             <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 text-gray-400 text-xl">
               📉
             </div>
           </div>
 
-          <h3 className="text-xl font-semibold mb-2 text-gray-700">
+          <h3 className="text-lg font-semibold mb-2 text-gray-700">
             Performance & Gestão
           </h3>
 
-          <p className="text-sm text-gray-500 mb-6 leading-relaxed">
+          <p className="text-sm text-gray-500 mb-6">
             Gestão de metas, performance e resultados
           </p>
 
@@ -89,5 +85,5 @@ export default function Tracks() {
       </div>
 
     </section>
-  );
+  )
 }
