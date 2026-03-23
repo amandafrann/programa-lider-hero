@@ -6,16 +6,16 @@ export default function JornadaPage() {
 
       <div className="max-w-6xl w-full px-8">
 
-        {/* VOLTAR (NOVO PADRÃO) */}
+        {/* VOLTAR (VERSÃO PREMIUM) */}
         <Link
           href="/"
-          className="group inline-flex items-center gap-2 hover:gap-3 text-sm font-medium text-gray-500 mb-10 transition-all duration-200"
+          className="group inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-semibold text-gray-600 hover:text-pink-600 hover:bg-pink-50 transition-all duration-200 mb-10"
         >
-          <span className="transition-all duration-200 group-hover:-translate-x-1 group-hover:text-pink-500">
+          <span className="transition-transform duration-200 group-hover:-translate-x-1">
             ←
           </span>
 
-          <span className="transition-colors duration-200 group-hover:text-pink-500">
+          <span className="tracking-tight">
             Voltar ao início
           </span>
         </Link>
@@ -73,7 +73,7 @@ export default function JornadaPage() {
 
             <div className="relative text-3xl mt-6 mb-4">🔎</div>
 
-            <h3 className="relative text-xl font-semibold mb-2">
+            <h3 className="relative text-xl font-semibold mb-2 text-gray-900">
               Recrutamento & Seleção
             </h3>
 
@@ -82,7 +82,7 @@ export default function JornadaPage() {
               até a decisão final de contratação.
             </p>
 
-            <div className="relative text-sm font-medium text-pink-500 group-hover:translate-x-1 transition">
+            <div className="relative text-sm font-semibold text-pink-500 group-hover:translate-x-1 transition">
               Explorar →
             </div>
           </Link>
@@ -151,7 +151,7 @@ export default function JornadaPage() {
 
             <div className="relative text-3xl mt-6 mb-4">📈</div>
 
-            <h3 className="relative text-xl font-semibold mb-2">
+            <h3 className="relative text-xl font-semibold mb-2 text-gray-900">
               Desenvolvimento
             </h3>
 
@@ -160,7 +160,7 @@ export default function JornadaPage() {
               e evoluir talentos dentro da Hero.
             </p>
 
-            <div className="relative text-sm font-medium text-purple-500 group-hover:translate-x-1 transition">
+            <div className="relative text-sm font-semibold text-purple-500 group-hover:translate-x-1 transition">
               Explorar →
             </div>
           </Link>
