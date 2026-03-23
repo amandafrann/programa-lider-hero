@@ -1,5 +1,3 @@
-// SUBSTITUIR TUDO
-
 import NextAuth from "next-auth"
 import GoogleProvider from "next-auth/providers/google"
 
@@ -11,13 +9,19 @@ const handler = NextAuth({
     }),
   ],
 
-  // 🔴 ESSENCIAL PARA PRODUÇÃO
+  // 🔐 ESSENCIAL PARA PRODUÇÃO
   secret: process.env.NEXTAUTH_SECRET,
 
-  // (opcional, mas recomendado)
+  // (opcional) usa sua home como tela de login
   pages: {
     signIn: "/",
   },
+
+  callbacks: {
+    async session({ session }) {
+      return session
+    },
+  },
 })
 
-export { handler as GET, handler as POST }npm run dev
+export { handler as GET, handler as POST }
