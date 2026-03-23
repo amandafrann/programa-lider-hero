@@ -9,8 +9,10 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden">
 
+      {/* BACKGROUND */}
       <div className="absolute inset-0 bg-gradient-to-br from-pink-50 via-white to-purple-50" />
 
+      {/* CONTEÚDO */}
       <div className="relative max-w-7xl mx-auto px-6 py-32">
 
         <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -31,8 +33,8 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* LADO DIREITO */}
-          <div className="hidden md:block">
+          {/* LADO DIREITO (LOGIN / USUÁRIO) */}
+          <div>
             <div className="bg-white/80 backdrop-blur border border-gray-200 rounded-3xl p-8 shadow-xl">
 
               {!session ? (
@@ -41,9 +43,13 @@ export default function Hero() {
                     Acesse sua jornada
                   </h3>
 
+                  <p className="text-sm text-gray-500 mb-6">
+                    Entre com sua conta para acompanhar seu progresso
+                  </p>
+
                   <button
                     onClick={() => signIn("google", { callbackUrl: "/jornada" })}
-                    className="w-full bg-white border border-gray-300 px-5 py-3 rounded-xl shadow-md"
+                    className="w-full flex items-center justify-center gap-3 bg-white border border-gray-300 px-5 py-3 rounded-xl shadow-md hover:shadow-lg transition"
                   >
                     🔐 Entrar com Google
                   </button>
@@ -60,7 +66,7 @@ export default function Hero() {
 
                   <button
                     onClick={() => signOut({ callbackUrl: "/" })}
-                    className="w-full bg-black text-white px-5 py-3 rounded-xl"
+                    className="w-full bg-black text-white px-5 py-3 rounded-xl shadow-md hover:shadow-lg transition"
                   >
                     Sair
                   </button>
