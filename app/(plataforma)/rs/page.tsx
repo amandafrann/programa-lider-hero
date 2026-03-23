@@ -6,26 +6,32 @@ export default function RSPage() {
 
       <div className="max-w-6xl w-full px-8">
 
-        {/* VOLTAR */}
+        {/* VOLTAR (PADRÃO NOVO) */}
         <Link
           href="/jornada"
-          className="text-sm text-gray-500 hover:text-gray-800 mb-10 inline-block"
+          className="group inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-semibold text-gray-600 hover:text-pink-600 hover:bg-pink-50 transition-all duration-200 mb-10"
         >
-          ← Voltar para jornada
+          <span className="transition-transform duration-200 group-hover:-translate-x-1">
+            ←
+          </span>
+
+          <span className="tracking-tight">
+            Voltar para jornada
+          </span>
         </Link>
 
         {/* HEADER */}
         <div className="mb-16">
 
-          <span className="text-xs bg-pink-100 text-pink-600 px-3 py-1 rounded-full">
+          <span className="text-xs bg-pink-100 text-pink-600 px-3 py-1 rounded-full font-medium">
             Jornada ativa
           </span>
 
-          <h1 className="text-5xl font-bold mt-4 mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mt-4 mb-6 leading-tight text-gray-900">
             Recrutamento & Seleção
           </h1>
 
-          <p className="text-gray-500 text-lg max-w-2xl">
+          <p className="text-gray-600 text-lg max-w-2xl leading-relaxed">
             Aprenda a conduzir processos de recrutamento desde o planejamento
             da vaga até a decisão final de contratação.
           </p>
@@ -42,7 +48,7 @@ export default function RSPage() {
           >
             <div className="text-3xl mb-4">🧠</div>
 
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">
               1. Planejamento da vaga
             </h3>
 
@@ -50,7 +56,7 @@ export default function RSPage() {
               Definir necessidade, escopo da vaga e alinhamento com People.
             </p>
 
-            <span className="text-sm font-medium text-pink-500">
+            <span className="text-sm font-semibold text-pink-500 group-hover:translate-x-1 transition">
               Explorar →
             </span>
           </Link>
@@ -62,7 +68,7 @@ export default function RSPage() {
           >
             <div className="text-3xl mb-4">🚀</div>
 
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">
               2. Abertura e alinhamento
             </h3>
 
@@ -70,7 +76,7 @@ export default function RSPage() {
               Como abrir uma vaga e iniciar o processo seletivo.
             </p>
 
-            <span className="text-sm font-medium text-pink-500">
+            <span className="text-sm font-semibold text-pink-500 group-hover:translate-x-1 transition">
               Explorar →
             </span>
           </Link>
@@ -78,7 +84,6 @@ export default function RSPage() {
           {/* PROCESSO (BLOQUEADO) */}
           <div className="relative bg-gray-50 rounded-2xl p-8 border border-gray-200 cursor-not-allowed">
 
-            {/* BADGE */}
             <span className="absolute top-4 left-4 text-xs bg-gray-200 text-gray-600 px-3 py-1 rounded-full">
               EM BREVE
             </span>
@@ -102,7 +107,6 @@ export default function RSPage() {
           {/* DECISÃO (BLOQUEADO) */}
           <div className="relative bg-gray-50 rounded-2xl p-8 border border-gray-200 cursor-not-allowed">
 
-            {/* BADGE */}
             <span className="absolute top-4 left-4 text-xs bg-gray-200 text-gray-600 px-3 py-1 rounded-full">
               EM BREVE
             </span>
