@@ -6,13 +6,18 @@ export default function JornadaPage() {
 
       <div className="max-w-6xl w-full px-8">
 
-        {/* VOLTAR */}
+        {/* VOLTAR (NOVO PADRÃO) */}
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-900 mb-10 transition"
+          className="group inline-flex items-center gap-2 hover:gap-3 text-sm font-medium text-gray-500 mb-10 transition-all duration-200"
         >
-          <span className="text-base">←</span>
-          Voltar para início
+          <span className="transition-all duration-200 group-hover:-translate-x-1 group-hover:text-pink-500">
+            ←
+          </span>
+
+          <span className="transition-colors duration-200 group-hover:text-pink-500">
+            Voltar ao início
+          </span>
         </Link>
 
         {/* BADGE */}
