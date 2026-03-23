@@ -6,7 +6,7 @@ export default function PlataformaLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#f7f7f8]">
 
       {/* HEADER GLOBAL */}
       <Header />
@@ -14,8 +14,14 @@ export default function PlataformaLayout({
       <div className="flex">
 
         {/* SIDEBAR */}
-        <aside className="w-80 bg-white border-r border-gray-200 min-h-screen p-6 overflow-y-auto">
+        <aside className="w-80 bg-white border-r border-gray-200 h-[calc(100vh-64px)] sticky top-16 p-6 overflow-y-auto">
 
+          {/* VOLTAR */}
+          <div className="mb-6 text-sm text-gray-500 hover:text-gray-800 cursor-pointer transition">
+            ← Voltar ao início
+          </div>
+
+          {/* TRILHA */}
           <div className="mb-8">
             <p className="text-xs text-gray-400 mb-1">Trilha</p>
 
@@ -40,14 +46,17 @@ export default function PlataformaLayout({
           {/* MENU */}
           <nav className="space-y-2 text-sm">
 
+            {/* FUNDAMENTOS */}
             <div className="text-xs text-gray-400 mt-6 mb-2">
               FUNDAMENTOS
             </div>
 
-            <div className="bg-pink-50 border border-pink-200 p-3 rounded-xl font-medium">
+            <div className="bg-white border border-gray-200 p-3 rounded-xl font-medium shadow-sm relative">
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-pink-500 rounded-l-xl"></div>
               O Ecossistema Hero
             </div>
 
+            {/* OPERACIONAL */}
             <div className="text-xs text-gray-400 mt-6 mb-2">
               OPERACIONAL
             </div>
@@ -60,6 +69,7 @@ export default function PlataformaLayout({
               Inadimplência e Serasa
             </div>
 
+            {/* GESTÃO */}
             <div className="text-xs text-gray-400 mt-6 mb-2">
               GESTÃO
             </div>
@@ -73,7 +83,7 @@ export default function PlataformaLayout({
         </aside>
 
         {/* CONTEÚDO */}
-        <main className="flex-1 bg-gradient-to-b from-white via-gray-50 to-gray-100 px-10 py-16">
+        <main className="flex-1 bg-gradient-to-b from-white via-gray-50 to-gray-100 px-12 py-12">
           {children}
         </main>
 
