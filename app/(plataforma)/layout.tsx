@@ -1,4 +1,4 @@
-import Header from "../../components/Header"
+import Header from "../components/Header" // ✅ CAMINHO CORRETO
 
 export default function PlataformaLayout({
   children,
