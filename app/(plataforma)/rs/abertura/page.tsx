@@ -1,20 +1,48 @@
+import Link from "next/link";
+
 export default function AberturaPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-gray-100 py-20 flex justify-center">
 
       <div className="max-w-5xl w-full px-6">
 
-        {/* INTRO */}
-        <p className="text-gray-700 text-lg mb-12 max-w-2xl">
-          Após utilizar a IA de People para estruturar a vaga, é hora de fazer a abertura da requisição na Gupy.
-        </p>
+        {/* HEADER DO MÓDULO */}
+        <div className="mb-12">
+
+          <span className="text-xs text-gray-400 uppercase tracking-wide">
+            R&S • Módulo 2
+          </span>
+
+          <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 mt-2">
+            Abertura e alinhamento
+          </h1>
+
+          <div className="flex items-center gap-3 mt-4">
+            <span className="text-sm bg-gray-100 px-3 py-1 rounded-full text-gray-600">
+              ⏱ 7 min
+            </span>
+
+            <span className="text-sm bg-pink-100 text-pink-600 px-3 py-1 rounded-full">
+              Em andamento
+            </span>
+          </div>
+
+        </div>
+
+        {/* INTRO DESTACADA */}
+        <div className="bg-pink-50 border border-pink-100 rounded-2xl p-8 mb-12">
+          <p className="text-gray-800 leading-relaxed text-lg">
+            Após utilizar a IA de People para estruturar a vaga, é hora de fazer a abertura da requisição na Gupy.
+          </p>
+        </div>
 
         {/* PASSOS */}
-        <div className="space-y-10">
+        <div className="space-y-12">
 
           {/* PASSO 1 */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg text-gray-900 mb-4">
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
               1. Acessar a Gupy
             </h3>
 
@@ -35,18 +63,20 @@ export default function AberturaPage() {
               <img src="https://i.imgur.com/DPpCkH4.png" className="rounded-xl border" />
               <img src="https://i.imgur.com/eM90ZZs.png" className="rounded-xl border" />
             </div>
+
           </div>
 
           {/* PASSO 2 */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg text-gray-900 mb-4">
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
               2. Selecionar o template da vaga
             </h3>
 
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
               <li>Modelo de contratação (<strong>CLT ou PJ</strong>)</li>
               <li><strong>Senioridade da posição</strong></li>
-              <li>Os demais campos já estarão preenchidos automaticamente</li>
+              <li>Campos já preenchidos automaticamente</li>
               <li>Clique em <strong>Atualizar e continuar</strong></li>
             </ul>
 
@@ -54,143 +84,124 @@ export default function AberturaPage() {
               src="https://i.imgur.com/JOVvXyE.png"
               className="rounded-xl border mt-6"
             />
+
           </div>
 
           {/* PASSO 3 */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg text-gray-900 mb-4">
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
               3. Descrição da vaga
             </h3>
 
-            <p className="text-gray-700 mb-3">
-              Edite <strong>APENAS</strong> os campos de <strong>Responsabilidades</strong> e <strong>Requisitos</strong>.
-            </p>
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-gray-800 mb-6">
+              ⚠️ Edite apenas responsabilidades e requisitos.
+            </div>
 
-            <p className="text-gray-600 mb-4">
-              Os demais textos já estão padronizados pelo template.
+            <p className="text-gray-700 mb-4">
+              Os demais textos já estão padronizados.
             </p>
 
             <p className="font-medium text-gray-900 mb-2">
-              Edite o campo <strong>"Sobre o desafio"</strong>:
+              Sobre o desafio:
             </p>
 
             <ul className="list-disc ml-6 space-y-2 text-gray-700 mb-6">
-              <li>O que a pessoa irá construir</li>
-              <li>Qual impacto terá no time ou na empresa</li>
+              <li>O que será construído</li>
+              <li>Impacto no time</li>
             </ul>
 
-            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-gray-800 mb-6">
-              ⚠️ Essa parte é o que torna a vaga mais atrativa — capriche.
+            {/* BLOCO EXTRA (nível produto) */}
+            <div className="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-xl">
+              <p className="font-medium text-gray-900">
+                💡 Dica
+              </p>
+
+              <p className="text-gray-700 mt-2">
+                Quanto mais concreto e claro, mais atrativa será sua vaga.
+              </p>
             </div>
 
-            <details className="bg-gray-50 border border-gray-200 rounded-xl p-4 cursor-pointer">
-              <summary className="font-medium text-gray-900">
-                📄 Ver template de referência
-              </summary>
-
-              <div className="mt-4 text-sm space-y-4 leading-relaxed text-gray-700">
-
-                <p>
-                  Ter um currículo compatível é importante, mas na <strong>Hero</strong> acreditamos que escolher um novo integrante vai além disso...
-                </p>
-
-                <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-700">
-                  Somos um time que aprende rápido...
-                </blockquote>
-
-                <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-700">
-                  Estamos em um momento único...
-                </blockquote>
-
-              </div>
-            </details>
-
-            <p className="mt-4 text-gray-700">
-              Clique em <strong>Atualizar e continuar</strong>.
-            </p>
           </div>
 
           {/* PASSO 4 */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg text-gray-900 mb-4">
-              4. Local / Modelo de trabalho
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              4. Modelo de trabalho
             </h3>
 
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
               <li>Remoto</li>
               <li>Híbrido</li>
               <li>Presencial</li>
-              <li>Clique em <strong>Atualizar e continuar</strong></li>
             </ul>
 
             <img
               src="https://i.imgur.com/DPqPQRt.png"
               className="rounded-xl border mt-6"
             />
+
           </div>
 
           {/* PASSO 5 */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg text-gray-900 mb-4">
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
               5. Dados internos
             </h3>
 
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
               <li>Quantidade de vagas</li>
               <li>Faixa salarial</li>
-              <li>Motivo da abertura</li>
-              <li>Nome do recrutador</li>
-              <li>Nome do gestor</li>
+              <li>Motivo</li>
+              <li>Recrutador</li>
+              <li>Gestor</li>
               <li>Justificativa</li>
             </ul>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-gray-800 mt-6">
-              ⚠️ Inclua o relatório gerado pela IA de People.
+              ⚠️ Inclua o relatório da IA de People.
             </div>
 
-            <p className="mt-4 text-gray-700">
-              Clique em <strong>Atualizar e continuar</strong>.
-            </p>
-
-            <img
-              src="https://i.imgur.com/xBxHcj1.png"
-              className="rounded-xl border mt-6"
-            />
           </div>
 
           {/* PASSO 6 */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg text-gray-900 mb-4">
-              6. Aprovação da vaga
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              6. Aprovação
             </h3>
 
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
-              <li>Defina <strong>Laura Pimenta</strong> como aprovadora</li>
-              <li>Clique em <strong>Requisitar</strong></li>
+              <li>Selecionar aprovador</li>
+              <li>Clicar em requisitar</li>
             </ul>
 
             <img
               src="https://i.imgur.com/TWdrfOc.png"
               className="rounded-xl border mt-6"
             />
+
           </div>
 
-          {/* PASSO 7 */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="font-semibold text-lg text-gray-900 mb-4">
-              7. Vaga em aprovação
-            </h3>
+        </div>
 
-            <ul className="list-disc ml-6 space-y-2 text-gray-700">
-              <li>A vaga entrará em fluxo de aprovação</li>
-              <li>Após aprovação, o time de R&S entrará em contato</li>
-            </ul>
+        {/* FINAL (UX DE PRODUTO) */}
+        <div className="mt-16 bg-white border border-gray-200 rounded-2xl p-8 flex items-center justify-between shadow-sm">
 
-            <img
-              src="https://i.imgur.com/gDjiOM1.png"
-              className="rounded-xl border mt-6"
-            />
+          <div>
+            <p className="font-semibold text-gray-900">
+              Módulo concluído?
+            </p>
+            <p className="text-gray-500 text-sm">
+              Marque como finalizado e avance.
+            </p>
           </div>
+
+          <button className="bg-pink-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-pink-600 transition">
+            Marcar como concluído
+          </button>
 
         </div>
 
