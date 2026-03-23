@@ -22,7 +22,7 @@ export default function PlanejamentoPage() {
           </h1>
 
           <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mb-6">
-            Aprenda a utilizar a IA de People para planejar uma nova vaga.
+            <span className="font-semibold text-gray-900"></span>Aprenda a utilizar a IA de People para planejar uma nova vaga.</span>
           </p>
 
           {/* TEMPO */}
