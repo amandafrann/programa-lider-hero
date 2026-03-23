@@ -12,9 +12,9 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-pink-50 via-white to-purple-50" />
 
       {/* CONTEÚDO */}
-      <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-28">
+      <div className="relative max-w-7xl mx-auto px-6 pt-20 pb-16 md:pt-24 md:pb-20">
 
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
 
           {/* LADO ESQUERDO */}
           <div>
@@ -22,19 +22,18 @@ export default function Hero() {
               ✨ Programa Líder Hero
             </span>
 
-            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-gray-900 leading-[1.1] mb-6">
+            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight mb-6">
               Plataforma de
               <br />
-              <span className="text-pink-600">
+              <span className="text-pink-600 block">
                 liderança prática
               </span>
             </h1>
 
-            <p className="text-gray-600 text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
+            <p className="text-gray-600 text-lg mb-8 max-w-xl leading-relaxed">
               Execute processos de gestão com clareza, consistência e impacto real.
             </p>
 
-            {/* CTA opcional (igual referência) */}
             <div className="flex gap-4">
               <a
                 href="/jornada"
@@ -66,7 +65,6 @@ export default function Hero() {
                     Entre com sua conta para acompanhar seu progresso
                   </p>
 
-                  {/* BOTÃO GOOGLE */}
                   <button
                     onClick={() => signIn("google", { callbackUrl: "/jornada" })}
                     className="w-full flex items-center justify-center gap-3 bg-white border border-gray-300 px-5 py-3 rounded-xl shadow-sm hover:shadow-md hover:bg-gray-50 transition-all cursor-pointer hover:scale-[1.01] active:scale-[0.99]"
