@@ -5,11 +5,11 @@ export default function Tracks() {
       {/* HEADER */}
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-3">
-          Trilhas de conhecimento
+          Trilhas da Jornada Hero
         </h2>
 
         <p className="text-gray-600 text-lg">
-          Selecione sua área de atuação para iniciar a jornada de aprendizado
+          Selecione uma trilha para iniciar seu aprendizado
         </p>
       </div>
 
@@ -32,7 +32,7 @@ export default function Tracks() {
           </h3>
 
           <p className="text-sm text-gray-600 mb-6">
-            Estruture processos seletivos com qualidade e consistência
+            Realize processos seletivos com clareza e qualidade
           </p>
 
           <div className="text-sm text-pink-600 font-medium group-hover:underline">
@@ -74,7 +74,7 @@ export default function Tracks() {
           </h3>
 
           <p className="text-sm text-gray-500 mb-6">
-            Gestão de metas, performance e resultados
+            Gestão de performance e avaliação
           </p>
 
           <span className="text-xs bg-gray-100 px-3 py-1 rounded-full">
