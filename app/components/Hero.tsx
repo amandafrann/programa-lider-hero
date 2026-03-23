@@ -1,8 +1,10 @@
 "use client"
 
-import { signIn } from "next-auth/react"
+import { signIn, signOut, useSession } from "next-auth/react"
 
 export default function Hero() {
+  const { data: session } = useSession()
+
   return (
     <section className="relative overflow-hidden">
 
@@ -52,26 +54,46 @@ export default function Hero() {
 
           </div>
 
-          {/* LADO DIREITO (LOGIN CARD) */}
+          {/* LADO DIREITO */}
           <div className="hidden md:block">
 
             <div className="bg-white/80 backdrop-blur border border-gray-200 rounded-3xl p-8 shadow-xl">
 
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Acesse sua jornada
-              </h3>
+              {!session ? (
+                <>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Acesse sua jornada
+                  </h3>
 
-              <p className="text-sm text-gray-500 mb-6">
-                Entre com sua conta para acompanhar seu progresso
-              </p>
+                  <p className="text-sm text-gray-500 mb-6">
+                    Entre com sua conta para acompanhar seu progresso
+                  </p>
 
-              <button
-                onClick={() => signIn("google", { callbackUrl: "/jornada" })}
-                className="w-full flex items-center justify-center gap-3 bg-white border border-gray-300 px-5 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all"
-              >
-                <span>🔐</span>
-                Entrar com Google
-              </button>
+                  <button
+                    onClick={() => signIn("google", { callbackUrl: "/jornada" })}
+                    className="w-full flex items-center justify-center gap-3 bg-white border border-gray-300 px-5 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all"
+                  >
+                    🔐 Entrar com Google
+                  </button>
+                </>
+              ) : (
+                <>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Bem-vinda 👋
+                  </h3>
+
+                  <p className="text-sm text-gray-600 mb-6">
+                    {session.user?.name}
+                  </p>
+
+                  <button
+                    onClick={() => signOut({ callbackUrl: "/" })}
+                    className="w-full bg-black text-white px-5 py-3 rounded-xl shadow-md hover:shadow-lg transition"
+                  >
+                    Sair
+                  </button>
+                </>
+              )}
 
             </div>
 
