@@ -5,7 +5,7 @@ export default function Tracks() {
       {/* HEADER */}
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-3">
-          Trilhas da Jornada Hero
+          Trilhas rápidas
         </h2>
 
         <p className="text-gray-600 text-lg">
