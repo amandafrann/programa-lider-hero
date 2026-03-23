@@ -14,7 +14,7 @@ export default function AberturaPage() {
           </span>
 
           <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 mt-2">
-            Abertura e alinhamento
+            Abertura:
           </h1>
 
           <div className="flex items-center gap-3 mt-4">
@@ -32,8 +32,7 @@ export default function AberturaPage() {
         {/* INTRO DESTACADA */}
         <div className="bg-pink-50 border border-pink-100 rounded-2xl p-8 mb-12">
           <p className="text-gray-800 leading-relaxed text-lg">
-            Após utilizar a IA de People para estruturar a vaga, é hora de fazer a abertura da requisição na Gupy.
-          </p>
+            Após utilizar a IA de People para estruturar a vaga, é hora de fazer a abertura da requisição na Gupy:          </p>
         </div>
 
         {/* PASSOS */}
@@ -95,11 +94,11 @@ export default function AberturaPage() {
             </h3>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-gray-800 mb-6">
-              ⚠️ Edite apenas responsabilidades e requisitos.
+              ⚠️ Edite apenas responsabilidades e requisitos, os demais textos já estão padronizados.
             </div>
 
             <p className="text-gray-700 mb-4">
-              Os demais textos já estão padronizados.
+              
             </p>
 
             <p className="font-medium text-gray-900 mb-2">
@@ -161,7 +160,7 @@ export default function AberturaPage() {
             </ul>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-gray-800 mt-6">
-              ⚠️ Inclua o relatório da IA de People.
+              ⚠️ IMPORTANTE: Inclua aqui o relatório da IA de People, realizado na etapa anterior.
             </div>
 
           </div>
