@@ -16,6 +16,7 @@ export default function RSPage() {
 
         {/* HEADER */}
         <div className="mb-16">
+
           <span className="text-xs bg-pink-100 text-pink-600 px-3 py-1 rounded-full">
             Jornada ativa
           </span>
@@ -28,6 +29,7 @@ export default function RSPage() {
             Aprenda a conduzir processos de recrutamento desde o planejamento
             da vaga até a decisão final de contratação.
           </p>
+
         </div>
 
         {/* GRID */}
@@ -73,51 +75,58 @@ export default function RSPage() {
             </span>
           </Link>
 
-          {/* PROCESSO BLOQUEADO */}
-          <div className="relative bg-gray-50 rounded-2xl p-8 border border-gray-200 opacity-60 cursor-not-allowed">
+          {/* PROCESSO (BLOQUEADO) */}
+          <div className="relative bg-gray-50 rounded-2xl p-8 border border-gray-200 cursor-not-allowed">
+
+            {/* BADGE */}
             <span className="absolute top-4 left-4 text-xs bg-gray-200 text-gray-600 px-3 py-1 rounded-full">
               EM BREVE
             </span>
 
-            <div className="text-3xl mb-4">🎯</div>
+            <div className="text-3xl mb-4 opacity-50">🎯</div>
 
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="text-xl font-semibold mb-2 text-gray-400">
               3. Condução do processo
             </h3>
 
-            <p className="text-gray-600 text-sm mb-6">
+            <p className="text-gray-400 text-sm mb-6">
               Como conduzir entrevistas e avaliar candidatos.
             </p>
 
-            <span className="text-sm text-gray-400">
+            <span className="text-sm text-gray-300">
               Indisponível
             </span>
+
           </div>
 
-          {/* DECISÃO BLOQUEADO */}
-          <div className="relative bg-gray-50 rounded-2xl p-8 border border-gray-200 opacity-60 cursor-not-allowed">
+          {/* DECISÃO (BLOQUEADO) */}
+          <div className="relative bg-gray-50 rounded-2xl p-8 border border-gray-200 cursor-not-allowed">
+
+            {/* BADGE */}
             <span className="absolute top-4 left-4 text-xs bg-gray-200 text-gray-600 px-3 py-1 rounded-full">
               EM BREVE
             </span>
 
-            <div className="text-3xl mb-4">✅</div>
+            <div className="text-3xl mb-4 opacity-50">✅</div>
 
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="text-xl font-semibold mb-2 text-gray-400">
               4. Decisão e fechamento
             </h3>
 
-            <p className="text-gray-600 text-sm mb-6">
+            <p className="text-gray-400 text-sm mb-6">
               Tomada de decisão, proposta e fechamento da vaga.
             </p>
 
-            <span className="text-sm text-gray-400">
+            <span className="text-sm text-gray-300">
               Indisponível
             </span>
+
           </div>
 
         </div>
 
       </div>
+
     </main>
   );
 }
