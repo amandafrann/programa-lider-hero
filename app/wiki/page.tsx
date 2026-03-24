@@ -69,12 +69,13 @@ export default function WikiPage() {
         <div className="font-semibold">❓ Wiki Hero</div>
       </div>
 
+      {/* LINHA SUAVE */}
       <div className="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
 
       {/* HERO */}
       <div className="text-center pt-16 pb-10 px-6">
 
-        <div className="inline-flex items-center gap-2 px-4 py-1 text-xs rounded-full border border-gray-300 bg-white mb-6">
+        <div className="inline-flex items-center gap-2 px-4 py-1 text-xs rounded-full border border-gray-200 bg-white mb-6">
           ✨ BASE DE CONHECIMENTO
         </div>
 
@@ -91,7 +92,7 @@ export default function WikiPage() {
       {/* BUSCA */}
       <div className="max-w-3xl mx-auto px-6 mb-6 relative">
 
-        <div className="bg-white border border-gray-200/70 rounded-xl px-5 py-4 flex items-center gap-4 shadow-sm">
+        <div className="bg-white border border-gray-100 rounded-xl px-5 py-4 flex items-center gap-4 shadow-sm">
           🔍
           <input
             className="w-full outline-none"
@@ -103,7 +104,7 @@ export default function WikiPage() {
 
         {/* SUGESTÕES */}
         {busca && sugestoes.length > 0 && (
-          <div className="absolute w-full bg-white border border-gray-200/70 mt-2 rounded-xl shadow-lg z-10">
+          <div className="absolute w-full bg-white border border-gray-100 mt-2 rounded-xl shadow-lg z-10">
             {sugestoes.map((item, i) => (
               <div
                 key={i}
@@ -124,11 +125,11 @@ export default function WikiPage() {
         {Object.keys(agrupado).map((categoria) => (
           <div
             key={categoria}
-            className="bg-white border border-gray-200/70 rounded-2xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
+            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
           >
 
             {/* HEADER CATEGORIA */}
-            <div className="px-6 py-4 font-semibold flex items-center gap-3 border-b border-gray-200/60 bg-gray-50">
+            <div className="px-6 py-4 font-semibold flex items-center gap-3 border-b border-gray-100 bg-gray-50">
               ⚡ {categoria}
             </div>
 
@@ -138,7 +139,7 @@ export default function WikiPage() {
               const isOpen = aberto === id;
 
               return (
-                <div key={index} className="border-t border-gray-200/60">
+                <div key={index} className="border-t border-gray-100">
 
                   {/* PERGUNTA */}
                   <div
@@ -148,7 +149,7 @@ export default function WikiPage() {
                     className={`flex justify-between items-center px-6 py-4 cursor-pointer transition
                     ${
                       isOpen
-                        ? "text-pink-500 bg-pink-50/30"
+                        ? "text-pink-400 bg-pink-50/10"
                         : "text-gray-800 hover:bg-gray-50"
                     }`}
                   >
@@ -175,10 +176,10 @@ export default function WikiPage() {
 
                       <div className="px-6 pb-6 pl-10">
 
-                        <div className="relative bg-gray-100 border border-gray-200/70 rounded-xl p-5">
+                        <div className="relative bg-gray-50 border border-gray-100 rounded-xl p-5">
 
                           {/* SETA */}
-                          <div className="absolute -left-2 top-4 w-3 h-3 bg-gray-100 border-l border-b border-gray-200/70 rotate-45" />
+                          <div className="absolute -left-2 top-4 w-3 h-3 bg-gray-50 border-l border-b border-gray-100 rotate-45" />
 
                           <p className="text-gray-700">
                             {item.resposta}
@@ -186,7 +187,7 @@ export default function WikiPage() {
 
                           <Link
                             href={item.link}
-                            className="block mt-4 text-sm text-blue-600"
+                            className="block mt-4 text-sm text-blue-600 hover:underline"
                           >
                             Ver aula completa →
                           </Link>
