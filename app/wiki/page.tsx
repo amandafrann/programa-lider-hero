@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { courseData } from "@/lib/courseData";
 
-// 🔥 TRANSFORMA EM FAQ
 const gerarFAQ = () => {
   const resultado: any[] = [];
 
@@ -31,7 +30,6 @@ export default function WikiPage() {
 
   const faq = gerarFAQ();
 
-  // 🔥 FILTRO
   const filtrar = (item: any) => {
     const b = busca.toLowerCase();
 
@@ -44,18 +42,14 @@ export default function WikiPage() {
     );
   };
 
-  const resultados = busca
-    ? faq.filter(filtrar)
-    : faq;
+  const resultados = busca ? faq.filter(filtrar) : faq;
 
-  // 🔥 AGRUPAR POR CATEGORIA
   const agrupado = resultados.reduce((acc: any, item: any) => {
     if (!acc[item.categoria]) acc[item.categoria] = [];
     acc[item.categoria].push(item);
     return acc;
   }, {});
 
-  // 🔥 SUGESTÕES
   const sugestoes = busca
     ? faq
         .filter((item) =>
@@ -72,7 +66,6 @@ export default function WikiPage() {
         <Link href="/" className="text-gray-500 hover:text-black">
           ← Voltar ao início
         </Link>
-
         <div className="font-semibold">❓ Wiki Hero</div>
       </div>
 
@@ -90,7 +83,7 @@ export default function WikiPage() {
         </h1>
 
         <p className="text-gray-500 max-w-xl mx-auto">
-          Encontre processos, regras e respostas rápidas sobre People.
+          Encontre processos e respostas rápidas sobre People.
         </p>
 
       </div>
@@ -98,7 +91,7 @@ export default function WikiPage() {
       {/* BUSCA */}
       <div className="max-w-3xl mx-auto px-6 mb-6 relative">
 
-        <div className="bg-white border border-gray-200 rounded-xl px-5 py-4 flex items-center gap-4 shadow-sm">
+        <div className="bg-white border border-gray-200/70 rounded-xl px-5 py-4 flex items-center gap-4 shadow-sm">
           🔍
           <input
             className="w-full outline-none"
@@ -110,14 +103,12 @@ export default function WikiPage() {
 
         {/* SUGESTÕES */}
         {busca && sugestoes.length > 0 && (
-          <div className="absolute w-full bg-white border mt-2 rounded-xl shadow-lg z-10">
+          <div className="absolute w-full bg-white border border-gray-200/70 mt-2 rounded-xl shadow-lg z-10">
             {sugestoes.map((item, i) => (
               <div
                 key={i}
                 className="px-4 py-3 hover:bg-gray-50 cursor-pointer text-sm"
-                onClick={() => {
-                  setBusca(item.pergunta);
-                }}
+                onClick={() => setBusca(item.pergunta)}
               >
                 {item.pergunta}
               </div>
@@ -127,17 +118,17 @@ export default function WikiPage() {
 
       </div>
 
-      {/* RESULTADOS AGRUPADOS */}
+      {/* RESULTADOS */}
       <div className="max-w-4xl mx-auto px-6 space-y-8">
 
         {Object.keys(agrupado).map((categoria) => (
           <div
             key={categoria}
-            className="bg-white border border-gray-200 rounded-2xl overflow-hidden"
+            className="bg-white border border-gray-200/70 rounded-2xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
           >
 
             {/* HEADER CATEGORIA */}
-            <div className="px-6 py-4 font-semibold flex items-center gap-3 border-b bg-gray-50">
+            <div className="px-6 py-4 font-semibold flex items-center gap-3 border-b border-gray-200/60 bg-gray-50">
               ⚡ {categoria}
             </div>
 
@@ -147,7 +138,7 @@ export default function WikiPage() {
               const isOpen = aberto === id;
 
               return (
-                <div key={index} className="border-t">
+                <div key={index} className="border-t border-gray-200/60">
 
                   {/* PERGUNTA */}
                   <div
@@ -157,10 +148,9 @@ export default function WikiPage() {
                     className={`flex justify-between items-center px-6 py-4 cursor-pointer transition
                     ${
                       isOpen
-                        ? "text-pink-600 bg-pink-50"
+                        ? "text-pink-500 bg-pink-50/30"
                         : "text-gray-800 hover:bg-gray-50"
-                    }
-                    `}
+                    }`}
                   >
                     <div className="flex items-center gap-3">
                       💬
@@ -172,29 +162,41 @@ export default function WikiPage() {
                     </span>
                   </div>
 
-                  {/* RESPOSTA */}
-                  {isOpen && (
-                    <div className="px-6 pb-6 pl-10">
+                  {/* RESPOSTA COM ANIMAÇÃO */}
+                  <div
+                    className={`grid transition-all duration-300 ease-in-out
+                    ${
+                      isOpen
+                        ? "grid-rows-[1fr] opacity-100"
+                        : "grid-rows-[0fr] opacity-0"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
 
-                      <div className="relative bg-gray-100 border border-gray-200 rounded-xl p-5">
+                      <div className="px-6 pb-6 pl-10">
 
-                        <div className="absolute -left-2 top-4 w-3 h-3 bg-gray-100 border-l border-b rotate-45" />
+                        <div className="relative bg-gray-100 border border-gray-200/70 rounded-xl p-5">
 
-                        <p className="text-gray-700">
-                          {item.resposta}
-                        </p>
+                          {/* SETA */}
+                          <div className="absolute -left-2 top-4 w-3 h-3 bg-gray-100 border-l border-b border-gray-200/70 rotate-45" />
 
-                        <Link
-                          href={item.link}
-                          className="block mt-4 text-sm text-blue-600"
-                        >
-                          Ver aula completa →
-                        </Link>
+                          <p className="text-gray-700">
+                            {item.resposta}
+                          </p>
+
+                          <Link
+                            href={item.link}
+                            className="block mt-4 text-sm text-blue-600"
+                          >
+                            Ver aula completa →
+                          </Link>
+
+                        </div>
 
                       </div>
 
                     </div>
-                  )}
+                  </div>
 
                 </div>
               );
