@@ -75,8 +75,16 @@ export default function WikiPage() {
       {/* HERO */}
       <div className="text-center pt-16 pb-10 px-6">
 
-        <div className="inline-flex items-center gap-2 px-4 py-1 text-xs rounded-full border border-gray-200 bg-white mb-6">
-          ✨ BASE DE CONHECIMENTO
+        {/* BADGE REFINADO */}
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 text-xs rounded-full 
+        bg-gradient-to-r from-white to-gray-50 
+        border border-gray-200 
+        shadow-sm 
+        text-gray-600 mb-6">
+
+          <span className="text-pink-400">✦</span>
+          Base de conhecimento
+
         </div>
 
         <h1 className="text-3xl md:text-5xl font-semibold mb-4">
@@ -92,7 +100,8 @@ export default function WikiPage() {
       {/* BUSCA */}
       <div className="max-w-3xl mx-auto px-6 mb-6 relative">
 
-        <div className="bg-white border border-gray-100 rounded-xl px-5 py-4 flex items-center gap-4 shadow-sm">
+        <div className="bg-white border border-gray-100 rounded-xl px-5 py-4 flex items-center gap-4 
+        shadow-[0_8px_30px_rgba(0,0,0,0.04)]">
           🔍
           <input
             className="w-full outline-none"
@@ -104,7 +113,8 @@ export default function WikiPage() {
 
         {/* SUGESTÕES */}
         {busca && sugestoes.length > 0 && (
-          <div className="absolute w-full bg-white border border-gray-100 mt-2 rounded-xl shadow-lg z-10">
+          <div className="absolute w-full bg-white border border-gray-100 mt-2 rounded-xl 
+          shadow-[0_10px_30px_rgba(0,0,0,0.08)] z-10">
             {sugestoes.map((item, i) => (
               <div
                 key={i}
@@ -125,11 +135,13 @@ export default function WikiPage() {
         {Object.keys(agrupado).map((categoria) => (
           <div
             key={categoria}
-            className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
+            className="bg-white border border-gray-100 rounded-2xl overflow-hidden
+            shadow-[0_10px_30px_rgba(0,0,0,0.04)]"
           >
 
             {/* HEADER CATEGORIA */}
-            <div className="px-6 py-4 font-semibold flex items-center gap-3 border-b border-gray-100 bg-gray-50">
+            <div className="px-6 py-4 font-semibold flex items-center gap-3 
+            border-b border-gray-100 bg-gray-50/70">
               ⚡ {categoria}
             </div>
 
@@ -163,7 +175,7 @@ export default function WikiPage() {
                     </span>
                   </div>
 
-                  {/* RESPOSTA COM ANIMAÇÃO */}
+                  {/* RESPOSTA */}
                   <div
                     className={`grid transition-all duration-300 ease-in-out
                     ${
@@ -176,7 +188,8 @@ export default function WikiPage() {
 
                       <div className="px-6 pb-6 pl-10">
 
-                        <div className="relative bg-gray-50 border border-gray-100 rounded-xl p-5">
+                        <div className="relative bg-gray-50 border border-gray-100 rounded-xl p-5
+                        shadow-[0_6px_20px_rgba(0,0,0,0.03)]">
 
                           {/* SETA */}
                           <div className="absolute -left-2 top-4 w-3 h-3 bg-gray-50 border-l border-b border-gray-100 rotate-45" />
