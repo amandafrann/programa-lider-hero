@@ -18,42 +18,56 @@ export default function Hero() {
 
           {/* LADO ESQUERDO */}
           <div>
-            <span className="inline-block text-xs font-medium bg-pink-100 text-pink-600 px-3 py-1 rounded-full mb-6">
+
+            {/* BADGE */}
+            <span className="inline-flex items-center gap-2 text-xs font-semibold bg-white border border-gray-200 px-3 py-1.5 rounded-full mb-6 shadow-sm text-gray-600">
               ✨ Programa Líder Hero
             </span>
 
-            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 leading-tight mb-6">
-              Plataforma
+            {/* TÍTULO */}
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 leading-[1.1] mb-6">
+              Potencialize sua
               <br />
-              <span className="text-pink-600">
-                Líder Hero
+              <span className="text-pink-500">
+                Jornada Hero
               </span>
             </h1>
 
-            <p className="text-gray-600 text-lg mb-8 max-w-xl leading-relaxed">
-              Execute processos de gestão com clareza e impacto real.
+            {/* TEXTO */}
+            <p className="text-gray-600 text-lg mb-8 max-w-xl leading-relaxed font-normal">
+              Execute processos de gestão com clareza, autonomia e impacto real no seu time.
             </p>
 
+            {/* BOTÕES */}
             <div className="flex gap-4">
+
               <a
                 href="/jornada"
-                className="bg-black text-white px-6 py-3 rounded-xl text-sm font-medium shadow-md hover:shadow-lg transition hover:scale-[1.02]"
+                className="bg-black text-white px-6 py-3 rounded-xl text-sm font-semibold 
+                shadow-md hover:shadow-lg transition-all 
+                hover:scale-[1.02] active:scale-[0.98]"
               >
                 Explorar Jornada →
               </a>
 
               <a
                 href="/wiki"
-                className="bg-white border border-gray-200 px-6 py-3 rounded-xl text-sm font-medium shadow-sm hover:shadow-md transition hover:scale-[1.02]"
+                className="bg-white border border-gray-200 px-6 py-3 rounded-xl text-sm font-semibold 
+                shadow-sm hover:shadow-md transition-all 
+                hover:scale-[1.02] active:scale-[0.98]"
               >
                 Wiki Hero
               </a>
+
             </div>
+
           </div>
 
           {/* LADO DIREITO */}
           <div>
-            <div className="bg-white/80 backdrop-blur border border-gray-200 rounded-3xl p-8 shadow-xl">
+
+            <div className="bg-white/80 backdrop-blur border border-gray-200 rounded-3xl p-8 
+            shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition hover:shadow-[0_25px_60px_rgba(0,0,0,0.12)]">
 
               {!session ? (
                 <>
@@ -67,7 +81,9 @@ export default function Hero() {
 
                   <button
                     onClick={() => signIn("google", { callbackUrl: "/jornada" })}
-                    className="w-full flex items-center justify-center gap-3 bg-white border border-gray-300 px-5 py-3 rounded-xl shadow-sm hover:shadow-md hover:bg-gray-50 transition-all cursor-pointer hover:scale-[1.01] active:scale-[0.99]"
+                    className="w-full flex items-center justify-center gap-3 bg-white border border-gray-300 px-5 py-3 rounded-xl 
+                    shadow-sm hover:shadow-md hover:bg-gray-50 transition-all cursor-pointer 
+                    hover:scale-[1.01] active:scale-[0.99]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +112,7 @@ export default function Hero() {
                       44 30.782 44 24c0-1.341-.138-2.65-.389-3.917z"/>
                     </svg>
 
-                    <span className="text-sm font-medium text-gray-700">
+                    <span className="text-sm font-semibold text-gray-700">
                       Continuar com Google
                     </span>
                   </button>
@@ -113,7 +129,9 @@ export default function Hero() {
 
                   <button
                     onClick={() => signOut({ callbackUrl: "/" })}
-                    className="w-full bg-black text-white px-5 py-3 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer hover:scale-[1.01] active:scale-[0.99]"
+                    className="w-full bg-black text-white px-5 py-3 rounded-xl 
+                    shadow-md hover:shadow-lg transition 
+                    hover:scale-[1.01] active:scale-[0.99]"
                   >
                     Sair
                   </button>
@@ -121,6 +139,7 @@ export default function Hero() {
               )}
 
             </div>
+
           </div>
 
         </div>
